@@ -68,6 +68,7 @@ In this project, we'll start at the **bottom** and work our way **up**.
 ---
 
 # Why Start with Transistors?
+<img src="D:\Projects\computer-architecture-from-scratch\src\images\bipolar-transistors.jpg" alt="Project Screenshot" width="300" />
 
 A transistor is an electronic component that can act as a very fast switch.
 
