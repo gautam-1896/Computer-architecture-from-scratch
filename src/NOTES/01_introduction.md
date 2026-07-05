@@ -187,6 +187,7 @@ Because there are **no moving mechanical parts**, switching happens extremely qu
 ---
 
 # How a Vacuum Tube Works
+![vaccum tube internal work](../images/vacuum%20tube%20internal.png)
 
 ## Step 1 — Heating the Cathode
 
@@ -359,11 +360,14 @@ The transistor would eventually replace nearly every vacuum tube and begin the m
 - Vacuum tubes made the first electronic computers possible.
 - Their size, heat, power consumption, and unreliability eventually led to the invention of the transistor.
 ## The Invention of the Transistor
+![invetor](../images/transistorinventors.webp)
 
-In **1947**, researchers at **Bell Labs** invented the first transistor.
+ the first transistor  was invented in **1947**   by **John Bardeen**,**Walter Brattain**, and **William Shockley** at **Bell Labs**..
 
+ 
+ ## The first transistor
+ ![ the first transistor](../images/the-first-working-transistor-invented-.webp)
 This breakthrough transformed the electronics industry.
-
 Compared to vacuum tubes, transistors were:
 
 - Smaller
@@ -379,6 +383,9 @@ This invention made modern computers possible.
 ## Integrated Circuits
 
 As manufacturing technology improved, engineers began placing multiple transistors onto a single silicon chip.
+![First Monolithic Silicon IC Chip](../images/First%20Monolithic%20Silicon%20IC%20Chip.jpg)
+
+First Monolithic Silicon IC Chip
 
 These chips became known as **Integrated Circuits (ICs)**.
 
@@ -405,6 +412,7 @@ Despite this incredible scale, every transistor still behaves like a tiny electr
 In 1965, engineer **Gordon Moore** observed that the number of transistors on integrated circuits was increasing rapidly over time.
 
 This observation became known as **Moore's Law**.
+![Moore's Law](../images/moore%20law.jpg)
 
 For decades, the number of transistors on computer chips roughly doubled every two years, enabling computers to become:
 
@@ -429,28 +437,28 @@ One Transistor
 Electronic Switch
         │
         ▼
-Logic Gates
+   Logic Gates
         │
         ▼
 Arithmetic Circuits
         │
         ▼
-Registers
+    Registers
         │
         ▼
-Memory
+     Memory
         │
         ▼
-ALU
+       ALU
         │
         ▼
-Control Unit
+   Control Unit
         │
         ▼
-CPU
+       CPU
         │
         ▼
-Computer
+     Computer
 ```
 
 Every chapter builds directly on the previous one.
@@ -546,4 +554,4 @@ In this chapter, you learned:
 
 In the next chapter, we'll begin with the fundamentals of **electricity**, the science that makes every computer possible.
 
-➡️ **Next:** `02_electricity_basics.md`
+➡️ **Next:** [02 Electricity Basics](02_electricity_basics.md)

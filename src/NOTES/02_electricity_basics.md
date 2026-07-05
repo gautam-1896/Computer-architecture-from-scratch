@@ -88,8 +88,13 @@ We will study electrons in detail in the next chapter.
 There are two common forms of electricity.
 ## Static electricity
 **Static electricity** is caused by a buildup of electric charge on an object's surface. When the charge suddenly moves to another object, you feel a small shock.
+
+
 ![Static electricity](../images/02/5.jpg)
 ## Current electricity
+
+![Static electricity](../images/02/6.jpg)
+
 **Current electricity** is a continuous movement of electrons through a conductor. Nearly every electronic device uses current electricity.
 
 
@@ -114,22 +119,7 @@ This path is called an **electric circuit**.
 If the path is broken, electricity stops flowing.
 
 Example:
-
-```text
- Battery
-   (+)
-    │
-    │
- Switch
-    │
-    │
- Light Bulb
-    │
-    │
- Battery
-   (-)
-```
-
+![Static electricity](../images/02/7.jpg)
 If the switch is closed:
 
 - The path is complete.
@@ -137,25 +127,24 @@ If the switch is closed:
 - The bulb lights.
 
 If the switch is open:
+- The path is broken.
+- No electricity flows.
 
-```text
-Battery
-   │
+## Basic Circuit Components
 
- Switch (Open)
-
- Light Bulb
-```
-
-The path is broken.
-
-No electricity flows.
-
+| Component | Purpose |
+|-----------|---------|
+| Battery | Provides electrical energy |
+| Wire | Carries electric current |
+| Switch | Opens or closes the circuit |
+| Load (Bulb, LED, Motor) | Uses electrical energy |
 ---
 
 # Electric Charge
 
 Everything around us is made of atoms.
+
+![atom](../images/02/8.jpg)
 
 Inside atoms are tiny particles.
 
@@ -164,7 +153,15 @@ One of these particles is the **electron**, which carries a **negative electric 
 When many electrons move together through a conductor, we observe electricity.
 
 Think of electric charge as the "thing" that electricity moves.
+## 💡 Interesting Fact
 
+Atoms contain:
+
+- **Protons (+)**
+- **Neutrons (0)**
+- **Electrons (−)**
+
+> **Only electrons move easily in electrical circuits.**
 ---
 
 # Electric Current
@@ -173,19 +170,11 @@ Electric current is the **flow of electric charge through a circuit**.
 
 Imagine water flowing through a pipe.
 
-```text
-Water Pipe
-
-Water ---> ---> --->
-```
+![atom](../images/02/9.jpg)
 
 Electric current behaves similarly.
 
-```text
-Wire
-
-Electrons ---> ---> --->
-```
+![atom](../images/02/10.jpg)
 
 Current tells us **how much electric charge passes a point every second**.
 
@@ -205,17 +194,8 @@ Historically, scientists believed electricity flowed from positive to negative.
 
 Later, they discovered that electrons actually move from negative to positive.
 
-```
-Electron Flow
 
-(-) ---------> (+)
-```
-
-```
-Conventional Current
-
-(+) ---------> (-)
-```
+![atom](../images/02/11.jpg)
 
 Today:
 
@@ -223,7 +203,28 @@ Today:
 - Semiconductor engineers often think in terms of **electron flow**.
 
 Both conventions describe the same electrical behavior.
+## Why Learn Both?
 
+There are two ways to describe the direction of electric current:
+
+- **Physics** usually focuses on **electron flow**, where electrons move from the **negative (−)** terminal to the **positive (+)** terminal.
+- **Circuit diagrams** and most electrical engineering books use **conventional current**, which flows from the **positive (+)** terminal to the **negative (−)** terminal.
+
+Although the directions are opposite, **both describe the same electrical circuit**.
+
+### Why Is This Important?
+
+Understanding both current directions helps you:
+
+- Read and understand **circuit diagrams**
+- Learn **electronics** more easily
+- Understand how **computer hardware** works
+- Study **computer architecture**, digital circuits, and microprocessors
+- Avoid confusion when reading different textbooks and technical documents
+
+> **Remember:**  
+> **Electrons move from − to +** (Electron Flow)  
+> **Conventional current flows from + to −** (Used in circuit diagrams)
 ---
 
 # Voltage
@@ -234,15 +235,7 @@ Imagine squeezing a water hose.
 
 The harder you squeeze, the greater the water pressure.
 
-```text
-Higher Pressure
-
-Tank
-██████
-   │
-   ▼
- Strong Water Flow
-```
+![atom](../images/02/12.jpg)
 
 Voltage works in a similar way.
 
@@ -282,19 +275,7 @@ The empty hallway.
 
 Electric current experiences something similar.
 
-```
-Easy Path
-
----------->
-```
-
-```
-Difficult Path
-
-->->->X->->->
-
-Current slows down
-```
+![atom](../images/02/13.jpg)
 
 The unit of resistance is the **ohm (Ω)**.
 
@@ -306,7 +287,39 @@ Higher resistance means:
 Lower resistance means:
 
 - Easier current flow
+## Conductors vs Insulators
 
+Materials are classified based on how easily electricity can pass through them.
+
+### Conductors
+Conductors allow electric current to flow easily because they have many free electrons.
+
+Examples:
+- Copper
+- Silver
+- Aluminum
+
+### Insulators
+Insulators resist the flow of electric current because their electrons are tightly bound.
+
+Examples:
+- Plastic
+- Rubber
+- Glass
+
+## Conductivity of Common Materials
+
+| Material | Conductivity |
+|----------|--------------|
+| Copper | Excellent |
+| Silver | Excellent |
+| Aluminum | Very Good |
+| Plastic | Poor |
+| Rubber | Poor |
+| Glass | Poor |
+
+> **Remember:**  
+> **Conductors** let electricity **flow easily**, while **insulators** **block or greatly reduce** the flow of electricity.
 ---
 
 # The Three Most Important Electrical Quantities
@@ -319,31 +332,21 @@ Electric circuits are mainly described using three quantities.
 | Current | I | Ampere | Flow of charge |
 | Resistance | R | Ohm | Opposition to current |
 
+## Easy Memory Trick
+
+- Voltage = Push
+
+- Current = Flow
+
+- Resistance = Obstacle
+
 These three quantities are related by **Ohm's Law**, which we will study in a later lesson.
 
 ---
 
 # Simple Circuit Example
 
-```text
-      +9V Battery
-      ┌───────┐
-      │       │
-      │       │
-      └──┬────┘
-         │
-         │
-      Switch
-         │
-         │
-      Resistor
-         │
-         │
-      LED
-         │
-         │
-─────────┘
-```
+![simple circuit](../images/02/14.jpg)
 
 Electricity flows only when the switch closes the circuit.
 
