@@ -565,4 +565,7 @@ To answer that, we must look much deeper—inside matter itself.
 
 In the next lesson, **"Atoms and Electrons,"** we will explore the tiny building blocks of matter and discover how the movement of electrons creates the electrical signals that power every modern computer.
 
-➡️ **Next:** [03_Atoms and Electrons](03_Atoms and Electrons.md)
+
+
+
+➡️ **Next:** [03 Atoms and Electrons](03_Atoms and Electrons.md)
