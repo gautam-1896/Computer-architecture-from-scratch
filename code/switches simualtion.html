@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Computers Switch: Relay → Vacuum Tube → Transistor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#12151b;
+    --panel:#1a1e26;
+    --panel-2:#20252f;
+    --line:#2b3140;
+    --text:#eef1f6;
+    --muted:#8d96a8;
+    --amber:#ffb454;
+    --cyan:#5ee6d0;
+    --coral:#ff6b6b;
+    --relay:#ff6b6b;
+    --tube:#ffb454;
+    --transistor:#5ee6d0;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(94,230,208,0.06), transparent 40%),
+      radial-gradient(circle at 85% 20%, rgba(255,180,84,0.06), transparent 40%),
+      var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+  }
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px 80px;}
+
+  /* ---------- HERO ---------- */
+  header.hero{
+    padding:56px 20px 30px;
+    text-align:center;
+    border-bottom:1px solid var(--line);
+    margin-bottom:40px;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.78rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--cyan);
+    margin-bottom:14px;
+  }
+  h1{
+    font-size:clamp(1.8rem,4vw,2.7rem);
+    margin:0 0 14px;
+    font-weight:800;
+    letter-spacing:-0.02em;
+  }
+  h1 span{color:var(--amber);}
+  .hero p{
+    max-width:640px;
+    margin:0 auto;
+    color:var(--muted);
+    font-size:1.02rem;
+  }
+
+  /* ---------- SECTION LABELS ---------- */
+  .section-label{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.75rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--muted);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:0 0 18px;
+  }
+  .section-label::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:var(--line);
+  }
+  section{margin-bottom:64px;}
+  h2.title{
+    font-size:1.4rem;
+    margin:0 0 8px;
+    font-weight:700;
+  }
+  .lede{color:var(--muted);margin:0 0 24px;max-width:680px;}
+
+  /* ---------- MODE TABS ---------- */
+  .tabs{
+    display:flex;
+    gap:10px;
+    margin-bottom:18px;
+    flex-wrap:wrap;
+  }
+  .tab{
+    flex:1;
+    min-width:160px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:14px 16px;
+    cursor:pointer;
+    text-align:left;
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    transition:border-color .15s, transform .15s;
+  }
+  .tab:hover{transform:translateY(-2px);}
+  .tab .tab-name{font-weight:700;font-size:0.98rem;display:flex;align-items:center;gap:8px;}
+  .tab .tab-year{color:var(--muted);font-size:0.78rem;font-family:'IBM Plex Mono',monospace;margin-top:4px;}
+  .tab .dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
+  .tab[data-mode="relay"] .dot{background:var(--relay);}
+  .tab[data-mode="tube"] .dot{background:var(--tube);}
+  .tab[data-mode="transistor"] .dot{background:var(--transistor);}
+  .tab.active[data-mode="relay"]{border-color:var(--relay); box-shadow:0 0 0 1px var(--relay) inset;}
+  .tab.active[data-mode="tube"]{border-color:var(--tube); box-shadow:0 0 0 1px var(--tube) inset;}
+  .tab.active[data-mode="transistor"]{border-color:var(--transistor); box-shadow:0 0 0 1px var(--transistor) inset;}
+
+  /* ---------- SIMULATOR ---------- */
+  .sim-panel{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:20px;
+  }
+  .sim-controls{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:16px;
+  }
+  #signalBtn{
+    font-family:'IBM Plex Mono',monospace;
+    font-weight:600;
+    font-size:0.92rem;
+    padding:12px 22px;
+    border-radius:10px;
+    border:1px solid var(--line);
+    background:var(--panel-2);
+    color:var(--text);
+    cursor:pointer;
+    min-width:190px;
+    transition:all .15s;
+  }
+  #signalBtn.active{
+    background:var(--coral);
+    border-color:var(--coral);
+    color:#1a0d0f;
+    box-shadow:0 0 22px rgba(255,107,107,0.45);
+  }
+  .canvas-container{
+    background:#0b0d12;
+    border:1px solid var(--line);
+    border-radius:12px;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+  }
+  canvas{display:block;max-width:100%;height:auto;}
+
+  .status-row{
+    display:flex;
+    gap:14px;
+    margin-top:14px;
+    flex-wrap:wrap;
+  }
+  .status-chip{
+    flex:1;
+    min-width:170px;
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:12px 14px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.85rem;
+  }
+  .status-chip .k{color:var(--muted);display:block;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px;}
+  .status-chip .v{font-weight:700;font-size:1rem;}
+
+  .caption-box{
+    margin-top:16px;
+    background:var(--panel-2);
+    border-left:3px solid var(--amber);
+    border-radius:0 10px 10px 0;
+    padding:14px 16px;
+    color:#cfd4de;
+    font-size:0.94rem;
+  }
+  .caption-box b{color:var(--text);}
+
+  /* ---------- SPEED CHART (signature element) ---------- */
+  .speedchart{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:24px 24px 16px;
+  }
+  .speed-row{margin-bottom:20px;}
+  .speed-row-top{display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:0.85rem;margin-bottom:6px;}
+  .speed-row-top .name{font-weight:700;font-size:0.95rem;font-family:'Inter',sans-serif;}
+  .speed-row-top .val{color:var(--muted);}
+  .speed-track{
+    position:relative;
+    height:14px;
+    background:#0b0d12;
+    border-radius:8px;
+    overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .speed-fill{
+    position:absolute;left:0;top:0;bottom:0;
+    border-radius:8px;
+    transition:width 1s ease;
+  }
+  .speedchart .note{color:var(--muted);font-size:0.82rem;margin-top:10px;}
+
+  /* ---------- HOW IT WORKS CARDS ---------- */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;}
+  .card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-top:3px solid var(--muted);
+    border-radius:14px;
+    padding:20px;
+  }
+  .card[data-mode="relay"]{border-top-color:var(--relay);}
+  .card[data-mode="tube"]{border-top-color:var(--tube);}
+  .card[data-mode="transistor"]{border-top-color:var(--transistor);}
+  .card h3{margin:0 0 8px;font-size:1.05rem;}
+  .card p{color:#cfd4de;font-size:0.92rem;margin:0 0 12px;}
+  .card .example{
+    font-size:0.82rem;
+    color:var(--muted);
+    background:var(--panel-2);
+    border-radius:8px;
+    padding:8px 10px;
+    font-family:'IBM Plex Mono',monospace;
+  }
+  .card .example b{color:var(--text);}
+
+  /* ---------- TABLE ---------- */
+  .table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:14px;}
+  table{width:100%;border-collapse:collapse;background:var(--panel);min-width:640px;}
+  th,td{padding:12px 16px;text-align:left;font-size:0.88rem;border-bottom:1px solid var(--line);}
+  th{
+    font-family:'IBM Plex Mono',monospace;
+    text-transform:uppercase;
+    font-size:0.72rem;
+    letter-spacing:0.07em;
+    color:var(--muted);
+    background:var(--panel-2);
+  }
+  tr:last-child td{border-bottom:none;}
+  td.tech{font-weight:700;}
+  td.tech.relay{color:var(--relay);}
+  td.tech.tube{color:var(--tube);}
+  td.tech.transistor{color:var(--transistor);}
+
+  /* ---------- TIMELINE ---------- */
+  .timeline{position:relative;padding-left:36px;}
+  .timeline::before{
+    content:"";
+    position:absolute;left:11px;top:6px;bottom:6px;
+    width:2px;background:var(--line);
+  }
+  .tl-item{position:relative;margin-bottom:26px;}
+  .tl-item:last-child{margin-bottom:0;}
+  .tl-num{
+    position:absolute;left:-36px;top:0;
+    width:24px;height:24px;border-radius:50%;
+    background:var(--panel-2);border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'IBM Plex Mono',monospace;font-size:0.7rem;font-weight:700;color:var(--muted);
+  }
+  .tl-item[data-mode="relay"] .tl-num{border-color:var(--relay);color:var(--relay);}
+  .tl-item[data-mode="tube"] .tl-num{border-color:var(--tube);color:var(--tube);}
+  .tl-item[data-mode="transistor"] .tl-num{border-color:var(--transistor);color:var(--transistor);}
+  .tl-year{font-family:'IBM Plex Mono',monospace;font-size:0.8rem;color:var(--muted);}
+  .tl-item h4{margin:2px 0 4px;font-size:1rem;}
+  .tl-item p{margin:0;color:#cfd4de;font-size:0.9rem;}
+
+  /* ---------- GLOSSARY ---------- */
+  .glossary{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
+  .term{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;}
+  .term dt{font-family:'IBM Plex Mono',monospace;font-weight:700;color:var(--cyan);font-size:0.88rem;margin-bottom:4px;}
+  .term dd{margin:0;color:#cfd4de;font-size:0.86rem;}
+
+  footer{text-align:center;color:var(--muted);font-size:0.82rem;padding-top:20px;border-top:1px solid var(--line);}
+
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="eyebrow">Computer architecture basics</div>
+  <h1>How does a computer <span>switch</span> on and off?</h1>
+  <p>Every computer, from 1940s giants to the phone in your pocket, is really just a huge number of on/off switches wired together. This page compares the three switches that shaped computing history: the <b>relay</b>, the <b>vacuum tube</b>, and the <b>transistor</b> &mdash; and lets you watch each one flip in real time.</p>
+</header>
+
+<div class="wrap">
+
+  <!-- SIMULATOR -->
+  <section id="sim">
+    <div class="section-label">01 &nbsp;Try it</div>
+    <h2 class="title">Flip the switch, watch what happens</h2>
+    <p class="lede">Pick a technology, then turn the input signal on and off. Watch how long it takes for the output side to react &mdash; that delay is the whole story of why computers got faster.</p>
+
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-mode="relay">
+        <span class="tab-name"><span class="dot"></span>Electromagnetic Relay</span>
+        <span class="tab-year">~1835 &middot; mechanical</span>
+      </button>
+      <button class="tab" data-mode="tube">
+        <span class="tab-name"><span class="dot"></span>Vacuum Tube</span>
+        <span class="tab-year">~1906 &middot; electronic</span>
+      </button>
+      <button class="tab" data-mode="transistor">
+        <span class="tab-name"><span class="dot"></span>Transistor</span>
+        <span class="tab-year">~1947 &middot; solid-state</span>
+      </button>
+    </div>
+
+    <div class="sim-panel">
+      <div class="sim-controls">
+        <button id="signalBtn">Input Signal: OFF</button>
+      </div>
+      <div class="canvas-container">
+        <canvas id="simCanvas" width="600" height="360"></canvas>
+      </div>
+      <div class="status-row">
+        <div class="status-chip"><span class="k">Switching delay</span><span class="v" id="delayDisplay">~10 ms</span></div>
+        <div class="status-chip"><span class="k">Output circuit</span><span class="v" id="outputDisplay" style="color:var(--muted)">OFF</span></div>
+        <div class="status-chip"><span class="k">How it turns on</span><span class="v" id="mechDisplay" style="font-size:0.82rem;">Coil pulls a metal arm</span></div>
+      </div>
+      <div class="caption-box" id="caption">
+        <b>Relay:</b> Electricity flows into a coil, which becomes a magnet and physically yanks a metal arm across the room to touch a contact. That arm has weight and has to overcome friction &mdash; so there's a real, measurable delay you can practically hear as a "click."
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEED CHART -->
+  <section id="speed">
+    <div class="section-label">02 &nbsp;Why it matters</div>
+    <h2 class="title">Same job, wildly different speed</h2>
+    <p class="lede">Each generation of switch did the exact same thing &mdash; turn a circuit on or off &mdash; but got roughly a million times faster than the one before it. This bar uses a <b>logarithmic</b> scale (each step is 1,000&times; faster), because a normal ruler can't fit "10 milliseconds" and "1 nanosecond" on the same page.</p>
+    <div class="speedchart">
+      <div class="speed-row">
+        <div class="speed-row-top"><span class="name" style="color:var(--relay)">Relay</span><span class="val">~10,000,000 ns (10 ms)</span></div>
+        <div class="speed-track"><div class="speed-fill" style="width:100%;background:var(--relay);"></div></div>
+      </div>
+      <div class="speed-row">
+        <div class="speed-row-top"><span class="name" style="color:var(--tube)">Vacuum Tube</span><span class="val">~1,000 ns (1 &micro;s)</span></div>
+        <div class="speed-track"><div class="speed-fill" style="width:43%;background:var(--tube);"></div></div>
+      </div>
+      <div class="speed-row">
+        <div class="speed-row-top"><span class="name" style="color:var(--transistor)">Transistor</span><span class="val">~1 ns (modern chip)</span></div>
+        <div class="speed-track"><div class="speed-fill" style="width:4%;background:var(--transistor);"></div></div>
+      </div>
+      <p class="note">Figures are rounded, illustrative orders of magnitude for beginners &mdash; real switching speed varies a lot by specific design and era.</p>
+    </div>
+  </section>
+
+  <!-- HOW EACH WORKS -->
+  <section id="how">
+    <div class="section-label">03 &nbsp;How each one works</div>
+    <h2 class="title">Three ways to make a switch</h2>
+    <div class="cards">
+      <div class="card" data-mode="relay">
+        <h3 style="color:var(--relay)">Electromagnetic Relay</h3>
+        <p>A coil of wire becomes an electromagnet when current flows through it. The magnet physically pulls a metal lever (the <b>armature</b>) onto a contact, closing a separate circuit. No electricity actually "jumps" between the two circuits &mdash; one just controls the other, like a foot pressing a pedal.</p>
+        <div class="example"><b>Used in:</b> 1900s telephone exchanges, the Harvard Mark I (1944), Konrad Zuse's Z3 (1941)</div>
+      </div>
+      <div class="card" data-mode="tube">
+        <h3 style="color:var(--tube)">Vacuum Tube</h3>
+        <p>A heated metal filament (the <b>cathode</b>) boils electrons off its surface into a vacuum. A wire mesh (the <b>grid</b>) sits in the electrons' path; giving it a small voltage can block or allow the stream through to the <b>anode</b> &mdash; no moving parts, so it's far faster than a relay.</p>
+        <div class="example"><b>Used in:</b> ENIAC (1945, ~17,000 tubes), early radios, TVs, and amplifiers</div>
+      </div>
+      <div class="card" data-mode="transistor">
+        <h3 style="color:var(--transistor)">Transistor</h3>
+        <p>A sliver of specially treated silicon (a <b>semiconductor</b>) can be made to conduct or block current depending on a small voltage at its <b>base</b>. There's no heating filament, no vacuum, and nothing physically moves &mdash; just electrons shifting through solid material.</p>
+        <div class="example"><b>Used in:</b> Every modern CPU and phone &mdash; billions on a single chip today</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section id="compare">
+    <div class="section-label">04 &nbsp;Side by side</div>
+    <h2 class="title">Full comparison</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Technology</th><th>Introduced</th><th>Principle</th><th>Typical size</th><th>Power use</th><th>Lifespan / reliability</th><th>Real example</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tech relay">Relay</td>
+            <td>~1835</td>
+            <td>Electromagnet moves a metal contact</td>
+            <td>Several cm</td>
+            <td>Moderate, only while switching</td>
+            <td>Contacts wear out / can arc and burn</td>
+            <td>Harvard Mark I (1944)</td>
+          </tr>
+          <tr>
+            <td class="tech tube">Vacuum Tube</td>
+            <td>~1906</td>
+            <td>Heated filament emits electrons through a vacuum</td>
+            <td>~5&ndash;15 cm</td>
+            <td>High, filament runs constantly</td>
+            <td>Filament eventually burns out, like a light bulb</td>
+            <td>ENIAC (1945)</td>
+          </tr>
+          <tr>
+            <td class="tech transistor">Transistor</td>
+            <td>~1947</td>
+            <td>Voltage controls conduction in a semiconductor</td>
+            <td>Nanometers (billions per chip)</td>
+            <td>Very low per switch</td>
+            <td>No moving/heated parts &mdash; extremely durable</td>
+            <td>Every modern smartphone CPU</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline">
+    <div class="section-label">05 &nbsp;The bigger picture</div>
+    <h2 class="title">How we got from clicks to chips</h2>
+    <div class="timeline">
+      <div class="tl-item" data-mode="relay">
+        <div class="tl-num">1</div>
+        <div class="tl-year">1835&ndash;1940s</div>
+        <h4>Relays run the first computers</h4>
+        <p>Telegraph and telephone engineers had used relays for decades. Early computers like the Z3 and Harvard Mark I borrowed the same parts to do logic and arithmetic &mdash; reliable, but loud and slow.</p>
+      </div>
+      <div class="tl-item" data-mode="tube">
+        <div class="tl-num">2</div>
+        <div class="tl-year">1906&ndash;1950s</div>
+        <h4>Vacuum tubes go electronic</h4>
+        <p>Lee de Forest's triode (1906) let a small signal control a much larger one with no moving parts. ENIAC (1945) used about 17,000 tubes and was thousands of times faster than relay machines &mdash; but tubes ran hot and failed often.</p>
+      </div>
+      <div class="tl-item" data-mode="transistor">
+        <div class="tl-num">3</div>
+        <div class="tl-year">1947&ndash;today</div>
+        <h4>The transistor takes over</h4>
+        <p>Bardeen, Brattain, and Shockley invented the transistor at Bell Labs in 1947. It was smaller, cooler, and far more reliable than a tube. Decades of shrinking transistors gave us integrated circuits, then microprocessors, then the billions-of-transistor chips in today's phones and laptops.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOSSARY -->
+  <section id="glossary">
+    <div class="section-label">06 &nbsp;New words, quickly defined</div>
+    <h2 class="title">Glossary for beginners</h2>
+    <dl class="glossary">
+      <div class="term"><dt>Switch</dt><dd>Anything that can be fully on or fully off &mdash; the basic building block of digital logic.</dd></div>
+      <div class="term"><dt>Coil / electromagnet</dt><dd>Wire wound in loops; current through it creates a magnetic field strong enough to pull metal.</dd></div>
+      <div class="term"><dt>Armature</dt><dd>The moving metal arm inside a relay that gets pulled by the electromagnet.</dd></div>
+      <div class="term"><dt>Cathode</dt><dd>The heated part of a vacuum tube that releases electrons.</dd></div>
+      <div class="term"><dt>Grid</dt><dd>A wire mesh inside a tube that controls how many electrons get through.</dd></div>
+      <div class="term"><dt>Anode</dt><dd>The positively charged plate that collects electrons at the end of their path.</dd></div>
+      <div class="term"><dt>Semiconductor</dt><dd>A material like silicon that can be tuned to conduct electricity only under certain conditions.</dd></div>
+      <div class="term"><dt>Base / collector / emitter</dt><dd>The three connections on a transistor; a small current at the base controls a larger current between the other two.</dd></div>
+    </dl>
+  </section>
+
+  <footer>Built for beginners learning computer architecture &middot; figures are simplified for teaching, not datasheet-accurate.</footer>
+</div>
+
+<script>
+(function(){
+  const canvas = document.getElementById('simCanvas');
+  const ctx = canvas.getContext('2d');
+  const tabs = document.querySelectorAll('.tab');
+  const signalBtn = document.getElementById('signalBtn');
+  const delayDisplay = document.getElementById('delayDisplay');
+  const outputDisplay = document.getElementById('outputDisplay');
+  const mechDisplay = document.getElementById('mechDisplay');
+  const caption = document.getElementById('caption');
+
+  let mode = 'relay';
+  let signalOn = false;
+  let outputOn = false;
+
+  // Relay state
+  let armatureAngle = 0;
+  const maxAngle = 15;
+
+  // Tube / transistor electron streams
+  let electrons = [];
+
+  const META = {
+    relay: {
+      delay: '~10 ms',
+      mech: 'Coil pulls a metal arm',
+      caption: '<b>Relay:</b> Electricity flows into a coil, which becomes a magnet and physically yanks a metal arm across the room to touch a contact. That arm has weight and has to overcome friction, so there is a real, measurable delay you can practically hear as a click.'
+    },
+    tube: {
+      delay: '~1 microsecond',
+      mech: 'Electrons stream through a vacuum',
+      caption: '<b>Vacuum tube:</b> A heated filament constantly boils off electrons. The grid\'s voltage decides whether those electrons are allowed to reach the anode. Nothing moves except electrons, so the reaction is close to instant, but the filament has to stay hot the whole time.'
+    },
+    transistor: {
+      delay: '~1 nanosecond',
+      mech: 'Voltage opens a gate in silicon',
+      caption: '<b>Transistor:</b> A small voltage at the base opens or closes a channel inside a solid piece of silicon. There is no filament to heat and nothing physically moves, so it switches roughly a thousand times faster than a tube, uses far less power, and can be shrunk to a few nanometers.'
+    }
+  };
+
+  function setMode(newMode){
+    mode = newMode;
+    tabs.forEach(t => t.classList.toggle('active', t.dataset.mode === mode));
+    delayDisplay.textContent = META[mode].delay;
+    mechDisplay.textContent = META[mode].mech;
+    caption.innerHTML = META[mode].caption;
+    signalOn = false;
+    outputOn = false;
+    armatureAngle = 0;
+    electrons = [];
+    updateSignalBtn();
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => setMode(tab.dataset.mode));
+  });
+
+  signalBtn.addEventListener('click', () => {
+    signalOn = !signalOn;
+    updateSignalBtn();
+  });
+
+  function updateSignalBtn(){
+    signalBtn.textContent = `Input Signal: ${signalOn ? 'ON' : 'OFF'}`;
+    signalBtn.classList.toggle('active', signalOn);
+  }
+
+  function drawRelay(){
+    const targetAngle = signalOn ? maxAngle : 0;
+    armatureAngle += (targetAngle - armatureAngle) * 0.08;
+    outputOn = armatureAngle > maxAngle - 1;
+
+    ctx.save();
+    ctx.strokeStyle = signalOn ? '#ff6b6b' : '#3a3f4a';
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.moveTo(50, 270);
+    ctx.lineTo(150, 270);
+    ctx.lineTo(150, 220);
+    ctx.stroke();
+
+    ctx.fillStyle = signalOn ? '#7a2e35' : '#2a2e37';
+    ctx.fillRect(120, 130, 60, 90);
+    ctx.strokeStyle = signalOn ? '#ffb454' : '#4a5060';
+    ctx.lineWidth = 2;
+    for (let i = 140; i < 220; i += 10) {
+      ctx.beginPath();
+      ctx.moveTo(110, i);
+      ctx.lineTo(190, i);
+      ctx.stroke();
+    }
+
+    if (signalOn) {
+      ctx.strokeStyle = 'rgba(94, 230, 208, 0.4)';
+      ctx.setLineDash([5, 5]);
+      ctx.beginPath();
+      ctx.arc(150, 120, 38, Math.PI, 2 * Math.PI);
+      ctx.stroke();
+      ctx.setLineDash([]);
+    }
+
+    ctx.strokeStyle = outputOn ? '#ffd166' : '#3a3f4a';
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.moveTo(350, 270);
+    ctx.lineTo(550, 270);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(350, 90);
+    ctx.lineTo(550, 90);
+    ctx.stroke();
+
+    ctx.fillStyle = '#ccc';
+    ctx.beginPath();
+    ctx.arc(350, 90, 7, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.translate(350, 270);
+    ctx.rotate(-armatureAngle * Math.PI / 180);
+    ctx.fillStyle = '#9aa1ad';
+    ctx.fillRect(-8, -180, 16, 180);
+    ctx.fillStyle = '#eef1f6';
+    ctx.beginPath();
+    ctx.arc(0, 0, 9, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+
+    // labels
+    ctx.fillStyle = '#8d96a8';
+    ctx.font = '12px IBM Plex Mono, monospace';
+    ctx.fillText('INPUT COIL', 105, 300);
+    ctx.fillText('OUTPUT CONTACT', 460, 300);
+  }
+
+  function drawTube(){
+    outputOn = signalOn;
+    if (signalOn && Math.random() > 0.1) {
+      electrons.push({ x: 300 + (Math.random() * 60 - 30), y: 270, speed: 5 + Math.random() * 5 });
+    }
+
+    ctx.save();
+    ctx.strokeStyle = signalOn ? '#ff6b6b' : '#3a3f4a';
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.moveTo(50, 180);
+    ctx.lineTo(200, 180);
+    ctx.stroke();
+
+    ctx.strokeStyle = outputOn ? '#ffd166' : '#3a3f4a';
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.moveTo(400, 90);
+    ctx.lineTo(550, 90);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(400, 290);
+    ctx.lineTo(550, 290);
+    ctx.stroke();
+
+    ctx.strokeStyle = 'rgba(255,255,255,0.25)';
+    ctx.lineWidth = 3;
+    ctx.fillStyle = 'rgba(255,255,255,0.04)';
+    ctx.beginPath();
+    ctx.ellipse(300, 180, 78, 135, 0, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.fillStyle = '#8b93a1';
+    ctx.fillRect(252, 72, 96, 18);
+
+    ctx.fillStyle = '#ff8a3d';
+    ctx.shadowColor = '#ff8a3d';
+    ctx.shadowBlur = 14;
+    ctx.fillRect(260, 270, 80, 14);
+    ctx.shadowBlur = 0;
+
+    ctx.strokeStyle = signalOn ? '#ff6b6b' : '#5a616f';
+    ctx.lineWidth = 3;
+    ctx.setLineDash([9, 9]);
+    ctx.beginPath();
+    ctx.moveTo(222, 180);
+    ctx.lineTo(378, 180);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    ctx.fillStyle = '#5ee6d0';
+    ctx.shadowColor = '#5ee6d0';
+    ctx.shadowBlur = 9;
+    for (let i = electrons.length - 1; i >= 0; i--) {
+      const e = electrons[i];
+      e.y -= e.speed;
+      ctx.beginPath();
+      ctx.arc(e.x, e.y, 3, 0, Math.PI * 2);
+      ctx.fill();
+      if (e.y < 90) electrons.splice(i, 1);
+    }
+    ctx.shadowBlur = 0;
+    if (!signalOn) electrons = [];
+    ctx.restore();
+
+    ctx.fillStyle = '#8d96a8';
+    ctx.font = '12px IBM Plex Mono, monospace';
+    ctx.fillText('GRID (INPUT)', 210, 305);
+    ctx.fillText('ANODE (OUTPUT)', 440, 78);
+  }
+
+  function drawTransistor(){
+    outputOn = signalOn;
+    // denser, faster stream than tube - no warm-up needed
+    if (signalOn) {
+      const n = Math.random() > 0.4 ? 2 : 1;
+      for (let k = 0; k < n; k++){
+        electrons.push({ x: 300 + (Math.random() * 40 - 20), y: 260, speed: 9 + Math.random() * 6 });
+      }
+    }
+
+    ctx.save();
+    // input (base) circuit
+    ctx.strokeStyle = signalOn ? '#ff6b6b' : '#3a3f4a';
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.moveTo(60, 180);
+    ctx.lineTo(230, 180);
+    ctx.stroke();
+
+    // output circuit (collector top, emitter bottom)
+    ctx.strokeStyle = outputOn ? '#ffd166' : '#3a3f4a';
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.moveTo(370, 90);
+    ctx.lineTo(540, 90);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(370, 270);
+    ctx.lineTo(540, 270);
+    ctx.stroke();
+
+    // small silicon chip body - deliberately tiny vs tube/relay
+    ctx.fillStyle = '#232a35';
+    ctx.strokeStyle = '#4a5060';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.roundRect(255, 130, 100, 100, 10);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.fillStyle = '#5ee6d0';
+    ctx.font = 'bold 12px IBM Plex Mono, monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('Si', 305, 185);
+    ctx.textAlign = 'left';
+
+    // base lead
+    ctx.strokeStyle = signalOn ? '#ff6b6b' : '#4a5060';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(230, 180);
+    ctx.lineTo(255, 180);
+    ctx.stroke();
+
+    // collector / emitter leads
+    ctx.strokeStyle = outputOn ? '#ffd166' : '#4a5060';
+    ctx.beginPath();
+    ctx.moveTo(305, 130);
+    ctx.lineTo(305, 90);
+    ctx.lineTo(370, 90);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(305, 230);
+    ctx.lineTo(305, 270);
+    ctx.lineTo(370, 270);
+    ctx.stroke();
+
+    // gate glow when open
+    if (signalOn){
+      ctx.strokeStyle = 'rgba(94, 230, 208, 0.5)';
+      ctx.lineWidth = 2;
+      ctx.setLineDash([4,4]);
+      ctx.strokeRect(268, 143, 74, 74);
+      ctx.setLineDash([]);
+    }
+
+    // electrons moving through the channel
+    ctx.fillStyle = '#5ee6d0';
+    ctx.shadowColor = '#5ee6d0';
+    ctx.shadowBlur = 8;
+    for (let i = electrons.length - 1; i >= 0; i--) {
+      const e = electrons[i];
+      e.y -= e.speed;
+      ctx.beginPath();
+      ctx.arc(e.x, e.y, 2.5, 0, Math.PI * 2);
+      ctx.fill();
+      if (e.y < 95) electrons.splice(i, 1);
+    }
+    ctx.shadowBlur = 0;
+    if (!signalOn) electrons = [];
+    ctx.restore();
+
+    ctx.fillStyle = '#8d96a8';
+    ctx.font = '12px IBM Plex Mono, monospace';
+    ctx.fillText('BASE (INPUT)', 130, 300);
+    ctx.fillText('COLLECTOR', 460, 78);
+    ctx.fillText('EMITTER', 460, 300);
+    ctx.fillText('no filament — works instantly at room temperature', 175, 335);
+  }
+
+  function animate(){
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    if (mode === 'relay') drawRelay();
+    else if (mode === 'tube') drawTube();
+    else drawTransistor();
+
+    outputDisplay.textContent = outputOn ? 'ON' : 'OFF';
+    outputDisplay.style.color = outputOn ? '#ffd166' : '#8d96a8';
+
+    requestAnimationFrame(animate);
+  }
+
+  updateSignalBtn();
+  animate();
+})();
+</script>
+</body>
+</html>

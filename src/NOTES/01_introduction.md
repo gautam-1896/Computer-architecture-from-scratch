@@ -84,26 +84,280 @@ These two states form the basis of **binary**, the language used by all digital 
 By combining millions—or even billions—of transistors, engineers create logic gates, memory, arithmetic units, and eventually complete processors.
 
 ---
+# A Brief History of Automated Switching
 
-# A Brief History
+As computers became more complex, manually flipping electrical switches became impossible. Engineers needed devices that could **automatically control the flow of electricity**.
 
-## Vacuum Tubes
-![Vacuum Tubes Diagram](..\images\vacuum-tube_770883-1985.webp)
+The evolution happened in three major stages:
 
-Before transistors were invented, computers used **vacuum tubes**.
+1. **Mechanical Switches** (Human operated)
+2. **Relays** (Electrically operated mechanical switches)
+3. **Vacuum Tubes** (Electronic switches with no moving parts)
+4. **Transistors** (Modern electronic switches)
 
-Characteristics:
-
-- Very large
-- Consumed a lot of electricity
-- Produced significant heat
-- Failed frequently
-- Expensive to manufacture
-
-Early computers occupied entire rooms and required enormous amounts of power.
+This section focuses on the first two automated technologies.
 
 ---
 
+# Relays
+![relay](../images/relay_real.jpg)
+
+Before electronic computers existed, engineers used **electromagnetic relays** to automate switching.
+
+A relay is an **electrically controlled mechanical switch**.
+
+## How a Relay Works
+![realy work](../images/relays%20inner.png)
+
+1. An electric current flows through a coil.
+2. The coil creates a magnetic field.
+3. The magnetic field pulls a metal arm.
+4. The arm opens or closes an electrical contact.
+5. Another circuit is turned ON or OFF.
+
+This allowed one electrical signal to control another automatically.
+
+---
+
+## Advantages
+
+- Easy to understand
+- Reliable for simple control systems
+- Can switch high voltages
+- Still used today in industrial automation and electrical equipment
+
+---
+
+## Disadvantages
+
+- Moving mechanical parts wear out
+- Slow switching speed
+- Produces clicking noise
+- Limited lifespan
+- Large compared to modern electronics
+
+---
+
+## Speed
+
+A typical relay switches in about:
+
+**≈ 10 milliseconds (ms)**
+
+Although fast for humans, this was far too slow for future computers that would need millions or billions of operations every second.
+
+---
+
+## Why Computers Moved Beyond Relays
+
+Mechanical movement creates a delay.
+
+Every operation requires:
+
+- Moving metal parts
+- Waiting for contacts to close
+- Waiting again to open
+
+For large calculations, this became the biggest performance bottleneck.
+
+Engineers needed a switch with **no moving parts**.
+
+---
+
+# Vacuum Tubes
+
+![Vacuum Tubes Diagram](../images/vacuum-tube_770883-1985.webp)
+
+The invention of the **vacuum tube** solved the speed problem.
+
+Instead of moving metal contacts, vacuum tubes control the movement of **electrons inside a sealed glass tube**.
+
+Since electrons move much faster than mechanical parts, vacuum tubes were **thousands of times faster than relays**.
+
+They became the foundation of the first generation of electronic computers.
+
+---
+
+# What Is a Vacuum Tube?
+
+A vacuum tube is an **electronic switch** that controls electrical current inside a glass tube from which nearly all air has been removed.
+
+Because there are **no moving mechanical parts**, switching happens extremely quickly.
+
+---
+
+# How a Vacuum Tube Works
+
+## Step 1 — Heating the Cathode
+
+A small wire called the **filament** heats the **cathode**.
+
+The cathode becomes extremely hot.
+
+---
+
+## Step 2 — Thermionic Emission
+
+When heated enough, the cathode releases electrons.
+
+This process is called **Thermionic Emission**.
+
+Think of it as electrons "boiling off" the metal surface.
+
+---
+
+## Step 3 — Electron Flow
+
+A positively charged **anode (plate)** attracts the free electrons.
+
+Electrons travel across the vacuum.
+
+Current now flows through the tube.
+
+---
+
+## Step 4 — The Control Grid
+
+Between the cathode and anode is a thin wire mesh called the **control grid**.
+
+It acts like an electronic gate.
+
+- Negative voltage → Repels electrons → Current stops ❌
+- Positive or less negative voltage → Electrons pass → Current flows ✅
+
+A tiny voltage on the grid can control a much larger current.
+
+This makes the vacuum tube an **electronic switch** and **amplifier**.
+
+---
+
+# Main Parts of a Vacuum Tube
+
+| Part | Function |
+|------|----------|
+| Filament | Heats the cathode |
+| Cathode | Emits electrons |
+| Control Grid | Controls electron flow |
+| Anode (Plate) | Collects electrons |
+
+---
+
+# Advantages of Vacuum Tubes
+
+- Much faster than relays
+- No moving mechanical parts
+- Can amplify electrical signals
+- Made electronic computers possible
+- Enabled radio, television, and early communication systems
+
+---
+
+# Disadvantages of Vacuum Tubes
+
+- Very large in size
+- Made of fragile glass
+- Consumed enormous amounts of electricity
+- Generated excessive heat
+- Required cooling systems
+- Burned out frequently
+- Expensive to manufacture and maintain
+- Less reliable than modern electronics
+
+---
+
+# Speed Comparison
+
+| Technology | Typical Switching Speed |
+|------------|------------------------|
+| Human-operated Switch | Seconds |
+| Relay | ~10 milliseconds |
+| Vacuum Tube | Microseconds |
+| Modern Transistor | Nanoseconds to Picoseconds |
+
+This dramatic improvement made electronic computing practical.
+
+---
+# Vacuum Tubes in Early Computers
+
+The first electronic computers relied almost entirely on **vacuum tubes** for computation and switching.
+
+Some famous vacuum tube computers include:
+
+- **ENIAC** (Electronic Numerical Integrator and Computer)
+- **EDVAC** (Electronic Discrete Variable Automatic Computer)
+- **UNIVAC I** (Universal Automatic Computer I)
+- **Colossus**
+
+These machines contained **thousands to tens of thousands of vacuum tubes**.
+
+![Vacuum Tube Computer](../images/vacuum%20tubes%20computer.jpg)
+
+### Reliability Problem
+
+One major drawback of vacuum tube computers was **low reliability**.
+
+- Vacuum tubes generated a large amount of heat.
+- They consumed a significant amount of electrical power.
+- Tubes frequently burned out or failed.
+- If even **one vacuum tube** failed, the entire computer could stop working until the faulty tube was located and replaced.
+
+Despite these limitations, vacuum tube computers marked the beginning of the electronic computing era and laid the foundation for modern computers.
+---
+
+# Challenges Faced by Early Computers
+
+Because vacuum tubes generated so much heat:
+
+- Entire rooms were needed to house computers.
+- Large cooling systems were installed.
+- Power consumption was extremely high.
+- Maintenance engineers constantly replaced failed tubes.
+
+Early computers could consume **tens to hundreds of kilowatts** of electrical power.
+
+---
+
+# Interesting Facts
+
+💡 ENIAC contained approximately **17,468 vacuum tubes**.
+
+💡 It weighed around **30 tons**.
+
+💡 It occupied about **1,800 square feet (167 m²)** of floor space.
+
+💡 It consumed roughly **150 kW** of electrical power.
+
+💡 Thousands of tubes operated simultaneously, so failures occurred regularly.
+
+---
+
+# Why Vacuum Tubes Were Replaced
+
+Although revolutionary, vacuum tubes had serious limitations.
+
+Engineers wanted devices that were:
+
+- Smaller
+- Faster
+- Cooler
+- More reliable
+- More energy efficient
+- Less expensive
+
+The solution arrived in **1947** with the invention of the **transistor** at Bell Labs.
+
+The transistor would eventually replace nearly every vacuum tube and begin the modern age of computing.
+
+---
+
+## Key Takeaways
+
+- Relays automated switching using electromagnets but were limited by moving parts.
+- Vacuum tubes replaced mechanical switching with electronic switching.
+- Thermionic emission allows heated cathodes to release electrons.
+- The control grid acts as an electronic ON/OFF switch.
+- Vacuum tubes made the first electronic computers possible.
+- Their size, heat, power consumption, and unreliability eventually led to the invention of the transistor.
 ## The Invention of the Transistor
 
 In **1947**, researchers at **Bell Labs** invented the first transistor.
@@ -259,7 +513,7 @@ You do **not** need prior knowledge of:
 - Assembly language
 - Processor design
 
-Basic familiarity with programming (especially Python) is helpful but not required.
+Basic familiarity with programming is helpful but not required.
 
 ---
 
