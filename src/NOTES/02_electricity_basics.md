@@ -58,6 +58,9 @@ Everything begins with electricity.
 
 # What Is Electricity?
 
+![charge1](../images/02/charges%20repel%20each%20other.jpg)
+
+
 Electricity is the **movement or presence of electric charge**.
 
 An **electric charge** is a property of matter that causes electrical forces.
@@ -67,33 +70,12 @@ There are two kinds of charge:
 - Positive (+)
 - Negative (−)
 
-Opposite charges attract each other.
+## Opposite charges attract each other.
+![charges attract](../images/02/3.png)
+## Like charges repel each other.
 
-Like charges repel each other.
+![charges repel](../images/02/4.png)
 
-```
-Positive (+)     Negative (-)
-
-     +   <------>   -
-
-Attract each other
-```
-
-```
-Positive (+)     Positive (+)
-
-     +  ------>  +
-
-Repel each other
-```
-
-```
-Negative (-)     Negative (-)
-
-     -  ------>  -
-
-Repel each other
-```
 
 Most electrical circuits work because tiny negatively charged particles called **electrons** move through materials.
 
@@ -104,11 +86,20 @@ We will study electrons in detail in the next chapter.
 # Static Electricity vs Current Electricity
 
 There are two common forms of electricity.
+## Static electricity
+**Static electricity** is caused by a buildup of electric charge on an object's surface. When the charge suddenly moves to another object, you feel a small shock.
+![Static electricity](../images/02/5.jpg)
+## Current electricity
+**Current electricity** is a continuous movement of electrons through a conductor. Nearly every electronic device uses current electricity.
+
 
 | Type | Description | Example |
 |------|-------------|---------|
 | Static Electricity | Charges remain in one place until discharged | Shock after walking on carpet |
 | Current Electricity | Charges continuously flow through a circuit | Computers, lights, fans |
+
+
+
 
 Computers use **current electricity**.
 
