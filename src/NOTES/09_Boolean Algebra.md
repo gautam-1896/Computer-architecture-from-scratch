@@ -722,3 +722,6 @@ A single logic gate can make a simple decision, but real computers perform compl
 These functions are created by combining multiple logic gates into larger circuits called **Combinational Circuits**.
 
 In the next chapter, **Combinational Circuits**, we will build practical digital components such as **half adders, full adders, multiplexers, demultiplexers, encoders, decoders, and comparators**—the building blocks of every Arithmetic Logic Unit (ALU) and CPU.
+
+
+➡️ **Next:** [10 Combinational Circuits](10_Combinational Circuits.md)

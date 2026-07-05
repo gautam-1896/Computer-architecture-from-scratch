@@ -708,3 +708,6 @@ Now that we understand how computer memory stores information, the next step is 
 Registers are the fastest storage elements in a computer and play a critical role in instruction execution, arithmetic operations, memory addressing, and CPU control.
 
 In the next chapter, **Registers**, we will explore the different types of CPU registers, how they work together, and why they are essential for building an efficient processor.
+
+
+➡️ **Next:** [13 Registers](13_Registers.md)

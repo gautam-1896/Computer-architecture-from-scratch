@@ -58,7 +58,7 @@ Everything begins with electricity.
 
 # What Is Electricity?
 
-![charge1](../images/02/charges%20repel%20each%20other.jpg)
+<img src="../images/02/charges%20repel%20each%20other.jpg" alt="charge1" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 
 Electricity is the **movement or presence of electric charge**.
@@ -71,10 +71,10 @@ There are two kinds of charge:
 - Negative (−)
 
 ## Opposite charges attract each other.
-![charges attract](../images/02/3.png)
+<img src="../images/02/3.png" alt="charges attract" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 ## Like charges repel each other.
 
-![charges repel](../images/02/4.png)
+<img src="../images/02/4.png" alt="charges repel" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 
 Most electrical circuits work because tiny negatively charged particles called **electrons** move through materials.
@@ -90,10 +90,10 @@ There are two common forms of electricity.
 **Static electricity** is caused by a buildup of electric charge on an object's surface. When the charge suddenly moves to another object, you feel a small shock.
 
 
-![Static electricity](../images/02/5.jpg)
+<img src="../images/02/5.jpg" alt="Static electricity" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 ## Current electricity
 
-![Static electricity](../images/02/6.jpg)
+<img src="../images/02/6.jpg" alt="Static electricity" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 **Current electricity** is a continuous movement of electrons through a conductor. Nearly every electronic device uses current electricity.
 
@@ -119,7 +119,7 @@ This path is called an **electric circuit**.
 If the path is broken, electricity stops flowing.
 
 Example:
-![Static electricity](../images/02/7.jpg)
+<img src="../images/02/7.jpg" alt="Static electricity" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 If the switch is closed:
 
 - The path is complete.
@@ -144,7 +144,7 @@ If the switch is open:
 
 Everything around us is made of atoms.
 
-![atom](../images/02/8.jpg)
+<img src="../images/02/8.jpg" alt="atom" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 Inside atoms are tiny particles.
 
@@ -170,11 +170,11 @@ Electric current is the **flow of electric charge through a circuit**.
 
 Imagine water flowing through a pipe.
 
-![atom](../images/02/9.jpg)
+<img src="../images/02/9.jpg" alt="atom" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 Electric current behaves similarly.
 
-![atom](../images/02/10.jpg)
+<img src="../images/02/10.jpg" alt="atom" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 Current tells us **how much electric charge passes a point every second**.
 
@@ -195,7 +195,7 @@ Historically, scientists believed electricity flowed from positive to negative.
 Later, they discovered that electrons actually move from negative to positive.
 
 
-![atom](../images/02/11.jpg)
+<img src="../images/02/11.jpg" alt="atom" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 Today:
 
@@ -235,7 +235,7 @@ Imagine squeezing a water hose.
 
 The harder you squeeze, the greater the water pressure.
 
-![atom](../images/02/12.jpg)
+<img src="../images/02/12.jpg" alt="atom" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 Voltage works in a similar way.
 
@@ -275,7 +275,7 @@ The empty hallway.
 
 Electric current experiences something similar.
 
-![atom](../images/02/13.jpg)
+<img src="../images/02/13.jpg" alt="atom" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 The unit of resistance is the **ohm (Ω)**.
 
@@ -346,7 +346,7 @@ These three quantities are related by **Ohm's Law**, which we will study in a la
 
 # Simple Circuit Example
 
-![simple circuit](../images/02/14.jpg)
+<img src="../images/02/14.jpg" alt="simple circuit" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 Electricity flows only when the switch closes the circuit.
 

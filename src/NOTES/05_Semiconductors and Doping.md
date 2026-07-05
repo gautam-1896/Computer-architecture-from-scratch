@@ -398,6 +398,9 @@ These controlled materials form the foundation of every modern electronic device
 9. What is an extrinsic semiconductor?
 10. Name two elements used for doping silicon.
 
+
+➡️ **Next:** [06 P-Type and N-Type Semiconductors](06_P-Type and N-Type Semiconductors.md)
+
 ---
 
 # Mini Quiz

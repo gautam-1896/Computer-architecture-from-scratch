@@ -533,3 +533,6 @@ At their boundary, electrons and holes interact in remarkable ways, creating a r
 Now that we understand **P-type** and **N-type** semiconductors, we are ready to study the **PN junction**—one of the most important structures in all of electronics.
 
 In the next chapter, **The PN Junction**, we will see how electrons and holes move across the boundary between P-type and N-type materials, forming a **depletion region** and a **built-in electric field**. These phenomena allow devices like diodes and transistors to control the flow of electricity with remarkable precision.
+
+
+➡️ **Next:** [07 Semiconductor Physics](07_Semiconductor Physics.md)

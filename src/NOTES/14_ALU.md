@@ -634,3 +634,6 @@ This component is the **Control Unit (CU)**.
 Now that we understand how the CPU performs calculations, the next step is to learn **how those calculations are coordinated**.
 
 In the next chapter, **Control Unit**, we will study how the CPU fetches instructions, decodes them, controls data movement between components, generates control signals, and manages the **Fetch–Decode–Execute Cycle** that drives every computer program.
+
+
+➡️ **Next:** [15 Control Unit](15_Control Unit.md)

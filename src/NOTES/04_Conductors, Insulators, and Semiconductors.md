@@ -568,3 +568,6 @@ Pure silicon alone is not enough to build transistors.
 To create electronic switches, engineers must carefully modify silicon by introducing small amounts of other elements. This process produces **P-type** and **N-type** semiconductors, which are the essential building blocks of diodes and transistors.
 
 In the next chapter, **Semiconductors and Doping**, we will explore how pure silicon is transformed into one of the most important materials in the history of computing.
+
+
+➡️ **Next:** [05 Semiconductors and Doping](05_Semiconductors and Doping.md)

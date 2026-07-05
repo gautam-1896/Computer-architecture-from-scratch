@@ -752,4 +752,7 @@ Instead of writing binary machine code directly, programmers often use **Assembl
 
 In the next chapter, **Assembler and Assembly Language**, we will explore how **assembly language is written, how an assembler converts it into machine code, labels, directives, symbols, and how simple assembly programs are created and executed**.
 
+
+➡️ **Next:** [18 Assembler](18_Assembler.md)
+
 This chapter will bridge the gap between **high-level programming languages** and the binary instructions executed by the CPU, completing our understanding of how software communicates with hardware.

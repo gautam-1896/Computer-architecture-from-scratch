@@ -771,6 +771,9 @@ Instead of studying existing CPUs, we will create one ourselves.
 
 In the next chapter, **Building a Complete 8-bit CPU**, we will design a simple but fully functional processor from scratch.
 
+
+➡️ **Next:** [20 Complete Computer](20_Complete Computer.md)
+
 Using everything learned in this book, we will build:
 
 - An 8-bit register file

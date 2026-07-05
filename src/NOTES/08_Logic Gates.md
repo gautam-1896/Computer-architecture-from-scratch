@@ -604,3 +604,6 @@ Logic gates allow computers to make simple decisions, but designing large digita
 To solve this problem, engineers use **Boolean Algebra**—a mathematical system that represents logic using variables, operators, and rules.
 
 In the next chapter, **Boolean Algebra**, we will learn how to write logical expressions, simplify circuits, and understand the mathematical foundation behind every digital computer.
+
+
+➡️ **Next:** [09 Boolean Algebra](09_Boolean Algebra.md)

@@ -644,3 +644,6 @@ The next step is to explore how computers organize stored information into large
 Sequential circuits provide the basic memory elements, but a modern computer needs much larger and more organized storage systems.
 
 In the next chapter, **Memory**, we will study how bits are stored in **RAM**, **ROM**, **cache memory**, and other storage technologies. We will also explore concepts such as **memory cells, addressing, capacity, latency,** and the **memory hierarchy**, which are fundamental to understanding computer architecture.
+
+
+➡️ **Next:** [12 Memory](12_Memory.md)

@@ -657,3 +657,6 @@ Now that we understand the physics behind semiconductors, we are ready to study 
 By combining **P-type** and **N-type** silicon, engineers create a device that can allow or block current depending on the applied voltage. This simple structure is the foundation of **diodes**, **transistors**, and ultimately every modern computer.
 
 In the next chapter, **PN Junction**, we will explore how this remarkable junction forms and why it is the cornerstone of semiconductor devices.
+
+
+➡️ **Next:** [08 Logic Gates](08_Logic Gates.md)

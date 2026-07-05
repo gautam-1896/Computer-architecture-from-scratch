@@ -78,7 +78,7 @@ The answer is the **atom**.
 
 # What Is an Atom?
 
-![atom](../images/3/1.jpg)
+<img src="../images/3/1.jpg" alt="atom" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 An **atom** is the smallest unit of an element that still keeps the chemical properties of that element.
 
@@ -106,7 +106,7 @@ An atom consists of two main parts:
 2. The electron cloud
 
 
-![atom](../images/3/1.jpg)
+<img src="../images/3/1.jpg" alt="atom" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 The **nucleus** is located at the center.
 
@@ -188,7 +188,7 @@ Imagine thousands of tiny balls moving through connected pipes.
 
 Now imagine those balls are electrons moving through a wire.
 
-![current flow](../images/02/10.jpg)
+<img src="../images/02/10.jpg" alt="current flow" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 When many electrons move together, we observe **electric current**.
 
@@ -204,7 +204,7 @@ They occupy specific regions called **electron shells** (or energy levels).
 
 A simplified model looks like this:
 
-![electron shell](../images/3/3.jpg)
+<img src="../images/3/3.jpg" alt="electron shell" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 The shell farthest from the nucleus is called the **outer shell** or **valence shell**.
 
@@ -234,7 +234,7 @@ Later, when we study **conductors**, **insulators**, and **semiconductors**, the
 
 Electrons are tightly held in some materials but loosely held in others.
 
-![electron move](../images/3/5.jpg)
+<img src="../images/3/5.jpg" alt="electron move" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 If an electron can move easily from one atom to another, electricity flows more easily.
 
@@ -264,7 +264,7 @@ Example:
 
 6 Electrons
 ```
-![neutal](../images/3/6.jpg)
+<img src="../images/3/6.jpg" alt="neutal" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 Positive and negative charges cancel each other.
 
 The atom has **no overall charge**.
@@ -303,7 +303,7 @@ Ions are important in chemistry and batteries, but ordinary electrical conductio
 
 A copper wire contains billions upon billions of copper atoms.
 
-![copper](../images/3/7.jpg/)
+<img src="../images/3/7.jpg" alt="copper" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 Each copper atom has loosely bound outer electrons.
 
@@ -326,7 +326,7 @@ Silicon behaves differently.
 
 Its outer electrons are more tightly bound.
 
-![silicon](../images/3/8.jpg)
+<img src="../images/3/8.jpg" alt="silicon" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 This makes silicon a **semiconductor**, meaning its conductivity can be controlled.
 
@@ -502,6 +502,9 @@ D. It contains extra protons.
 The ideas in this chapter prepare you for understanding why different materials behave differently when electricity passes through them.
 
 In the next lesson, we will compare **conductors, insulators, and semiconductors** and discover why silicon became the foundation of modern computing.
+
+
+➡️ **Next:** [04 Conductors, Insulators, and Semiconductors](04_Conductors, Insulators, and Semiconductors.md)
 
 ---
 

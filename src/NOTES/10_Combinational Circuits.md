@@ -635,3 +635,6 @@ So far, every circuit we have studied immediately responds to its inputs and the
 Modern computers, however, need to remember values over time. This is made possible by **Sequential Circuits**, which combine logic gates with feedback and storage elements.
 
 In the next chapter, **Sequential Circuits**, we will explore **latches, flip-flops, registers, counters, and clock signals**—the essential components that allow computers to store data and execute programs step by step.
+
+
+➡️ **Next:** [11 Sequential Circuits](11_Sequential Circuits.md)

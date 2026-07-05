@@ -68,7 +68,7 @@ In this project, we'll start at the **bottom** and work our way **up**.
 ---
 
 # Why Start with Transistors?
-![Bipolar Transistors Diagram](../images/bipolar-transistors.jpg)
+<img src="../images/bipolar-transistors.jpg" alt="Bipolar Transistors Diagram" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 A transistor is an electronic component that can act as a very fast switch.
 
 It has only two important states:
@@ -100,14 +100,14 @@ This section focuses on the first two automated technologies.
 ---
 
 # Relays
-![relay](../images/relay_real.jpg)
+<img src="../images/relay_real.jpg" alt="relay" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 Before electronic computers existed, engineers used **electromagnetic relays** to automate switching.
 
 A relay is an **electrically controlled mechanical switch**.
 
 ## How a Relay Works
-![realy work](../images/relays%20inner.png)
+<img src="../images/relays%20inner.png" alt="realy work" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 1. An electric current flows through a coil.
 2. The coil creates a magnetic field.
@@ -166,7 +166,7 @@ Engineers needed a switch with **no moving parts**.
 
 # Vacuum Tubes
 
-![Vacuum Tubes Diagram](../images/vacuum-tube_770883-1985.webp)
+<img src="../images/vacuum-tube_770883-1985.webp" alt="Vacuum Tubes Diagram" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 The invention of the **vacuum tube** solved the speed problem.
 
@@ -187,7 +187,7 @@ Because there are **no moving mechanical parts**, switching happens extremely qu
 ---
 
 # How a Vacuum Tube Works
-![vaccum tube internal work](../images/vacuum%20tube%20internal.png)
+<img src="../images/vacuum%20tube%20internal.png" alt="vaccum tube internal work" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 ## Step 1 — Heating the Cathode
 
@@ -291,7 +291,7 @@ Some famous vacuum tube computers include:
 
 These machines contained **thousands to tens of thousands of vacuum tubes**.
 
-![Vacuum Tube Computer](../images/vacuum%20tubes%20computer.jpg)
+<img src="../images/vacuum%20tubes%20computer.jpg" alt="Vacuum Tube Computer" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 ### Reliability Problem
 
@@ -360,13 +360,13 @@ The transistor would eventually replace nearly every vacuum tube and begin the m
 - Vacuum tubes made the first electronic computers possible.
 - Their size, heat, power consumption, and unreliability eventually led to the invention of the transistor.
 ## The Invention of the Transistor
-![invetor](../images/transistorinventors.webp)
+<img src="../images/transistorinventors.webp" alt="invetor" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
  the first transistor  was invented in **1947**   by **John Bardeen**,**Walter Brattain**, and **William Shockley** at **Bell Labs**..
 
  
  ## The first transistor
- ![ the first transistor](../images/the-first-working-transistor-invented-.webp)
+ <img src="../images/the-first-working-transistor-invented-.webp" alt="the first transistor" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 This breakthrough transformed the electronics industry.
 Compared to vacuum tubes, transistors were:
 
@@ -383,7 +383,7 @@ This invention made modern computers possible.
 ## Integrated Circuits
 
 As manufacturing technology improved, engineers began placing multiple transistors onto a single silicon chip.
-![First Monolithic Silicon IC Chip](../images/First%20Monolithic%20Silicon%20IC%20Chip.jpg)
+<img src="../images/First%20Monolithic%20Silicon%20IC%20Chip.jpg" alt="First Monolithic Silicon IC Chip" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 First Monolithic Silicon IC Chip
 
@@ -412,7 +412,7 @@ Despite this incredible scale, every transistor still behaves like a tiny electr
 In 1965, engineer **Gordon Moore** observed that the number of transistors on integrated circuits was increasing rapidly over time.
 
 This observation became known as **Moore's Law**.
-![Moore's Law](../images/moore%20law.jpg)
+<img src="../images/moore%20law.jpg" alt="Moore's Law" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
 For decades, the number of transistors on computer chips roughly doubled every two years, enabling computers to become:
 

@@ -592,3 +592,6 @@ These components are connected through a structured network of buses and data pa
 Now that we understand the major components of the CPU, the next step is to study **Datapath**.
 
 In the next chapter, **Datapath**, we will explore how data flows between **registers, multiplexers, buses, the ALU, memory, and the Control Unit**, and see how these components work together to execute every machine instruction.
+
+
+➡️ **Next:** [16 Datapath](16_Datapath.md)

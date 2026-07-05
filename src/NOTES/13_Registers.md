@@ -639,3 +639,6 @@ The component responsible for arithmetic and logical operations is the **Arithme
 Now that we understand how the CPU stores data in registers, the next step is to learn **how it processes that data**.
 
 In the next chapter, **Arithmetic Logic Unit (ALU)**, we will explore how the CPU performs operations such as **addition, subtraction, bitwise logic, comparisons, and shifts**, making it the computational core of every processor.
+
+
+➡️ **Next:** [14 ALU](14_ALU.md)
