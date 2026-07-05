@@ -68,7 +68,6 @@ In this project, we'll start at the **bottom** and work our way **up**.
 ---
 
 # Why Start with Transistors?
-![Bipolar Transistors Diagram](../images/bipolar-transistors.jpg)
 A transistor is an electronic component that can act as a very fast switch.
 
 It has only two important states:
@@ -88,7 +87,6 @@ By combining millions—or even billions—of transistors, engineers create logi
 # A Brief History
 
 ## Vacuum Tubes
-![Vacuum Tubes Diagram](..\images\vacuum-tube_770883-1985.webp)
 
 Before transistors were invented, computers used **vacuum tubes**.
 
