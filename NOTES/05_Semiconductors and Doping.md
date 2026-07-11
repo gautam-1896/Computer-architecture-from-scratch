@@ -77,17 +77,7 @@ Some reasons include:
 - Its electrical properties are easy to control through doping.
 
 Because of these advantages, nearly every modern CPU, GPU, RAM chip, and microcontroller is made primarily from silicon.
-## Additional Knowledge
 
-Although silicon dominates the semiconductor industry, other materials are used for specialized applications:
-
-| Material | Typical Applications |
-| :--- | :--- |
-| **Silicon (Si)** | CPUs, GPUs, RAM, SSD controllers |
-| **Germanium (Ge)** | High-speed devices |
-| **Gallium Arsenide (GaAs)** | RF communication, satellites |
-| **Silicon Carbide (SiC)** | Electric vehicles, industrial power electronics |
-| **Gallium Nitride (GaN)** | Fast chargers, 5G base stations |
 ---
 
 # Silicon Atoms
@@ -99,9 +89,14 @@ A silicon atom has:
 
 The most important fact for electronics is that it has **4 valence electrons**.
 
+```
+      Valence Shell
 
-![1](../images/5/1.jpg)
-
+          ●
+      ●       ●
+          Si
+           ●
+```
 
 These four valence electrons allow silicon atoms to bond strongly with neighboring atoms.
 
@@ -113,7 +108,13 @@ A **covalent bond** is formed when two atoms share electrons.
 
 In a silicon crystal, every silicon atom shares its four valence electrons with four neighboring silicon atoms.
 
-![2](../images/5/2.jpg)
+```
+          Si
+         / | \
+      Si--Si--Si
+         \ | /
+          Si
+```
 
 Each line represents a shared pair of electrons.
 
@@ -127,8 +128,15 @@ Millions of silicon atoms join together in a repeating three-dimensional pattern
 
 A simplified view looks like this:
 
-![3](../images/5/3.jpg)
-
+```text
+Si──Si──Si──Si
+│   │   │   │
+Si──Si──Si──Si
+│   │   │   │
+Si──Si──Si──Si
+│   │   │   │
+Si──Si──Si──Si
+```
 
 Every silicon atom forms four covalent bonds.
 
@@ -144,12 +152,17 @@ In pure silicon:
 - Very few electrons are free to move.
 - As a result, very little current flows at room temperature.
 
+```
+Electron
+     │
+     ▼
 
+Si──Si──Si
+
+Electron cannot move easily.
+```
 
 Pure silicon conducts electricity much less effectively than copper.
-### Why?
-
-In pure silicon, almost every valence electron is already involved in a covalent bond. Because there are very few free charge carriers, electrical current is limited.
 
 ---
 
@@ -261,9 +274,23 @@ Nearly all semiconductor devices use **extrinsic semiconductors**.
 
 # Visualizing Doping
 
+Before doping:
 
+```text
+Si Si Si Si
+Si Si Si Si
+Si Si Si Si
+Si Si Si Si
+```
 
-![4](../images/5/4.jpg)
+After doping:
+
+```text
+Si Si Si Si
+Si P  Si Si
+Si Si Si Si
+Si Si Si B
+```
 
 Only a few atoms are replaced.
 
