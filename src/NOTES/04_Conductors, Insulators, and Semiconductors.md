@@ -68,9 +68,7 @@ Think of three different classrooms.
 
 ### Classroom 1 – Students Can Move Freely
 
-```
-🙂 → 🙂 → 🙂 → 🙂
-```
+![1](../images/4/2.jpg)
 
 Students can easily move around.
 
@@ -80,10 +78,7 @@ This is like a **conductor**.
 
 ### Classroom 2 – Students Cannot Leave Their Seats
 
-```
-🙂  🙂  🙂  🙂
-🪑 🪑 🪑 🪑
-```
+![2](../images/4/1.jpg)
 
 Nobody can move.
 
@@ -92,10 +87,6 @@ This is like an **insulator**.
 ---
 
 ### Classroom 3 – Students Can Move Only with Permission
-
-```
-🙂 →     🙂     →
-```
 
 Movement is possible, but only under certain conditions.
 
@@ -111,11 +102,8 @@ In conductors, many electrons are **loosely bound** to their atoms.
 
 These electrons can move freely when voltage is applied.
 
-```
-Copper Wire
+![3](../images/4/3.png)
 
-e⁻ → → → → → → →
-```
 
 Since electrons move easily, conductors have **low electrical resistance**.
 
@@ -166,12 +154,11 @@ An **insulator** is a material that strongly resists the flow of electricity.
 
 Its electrons are tightly held by their atoms and cannot move freely.
 
-```
-Plastic
 
-e⁻    e⁻    e⁻
-(No movement)
-```
+![3](../images/4/4.png)
+
+
+
 
 Because electrons cannot move easily, insulators have **high electrical resistance**.
 
@@ -211,13 +198,11 @@ Without insulators:
 
 For example:
 
-```
-Copper Wire
-────────────
+![5](../images/4/5(1).jpg)
 
-Plastic Cover
-████████████
-```
+
+![5](../images/4/6.jpg)
+
 
 The copper carries electricity.
 
@@ -229,16 +214,7 @@ The plastic protects you from it.
 
 A **semiconductor** is a material whose electrical conductivity lies between that of a conductor and an insulator.
 
-```
-Conductor
-██████████
-
-Semiconductor
-█████
-
-Insulator
-█
-```
+![7](../images/4/7.jpg)
 
 A semiconductor:
 
@@ -295,19 +271,7 @@ However, there is a problem.
 
 A transistor must behave like a switch.
 
-```
-Switch ON
-
-Current
-──────►
-```
-
-```
-Switch OFF
-
-No Current
-────X────
-```
+![8](../images/4/8.jpg)
 
 Copper cannot easily switch between conducting and blocking electricity.
 
@@ -333,21 +297,7 @@ That makes it perfect for building transistors.
 
 # Electrical Conductivity Scale
 
-```
-Better Conductor
-│
-│ Copper
-│ Silver
-│ Gold
-│
-│ Silicon
-│
-│ Glass
-│ Plastic
-│ Rubber
-│
-Poor Conductor
-```
+![9](../images/4/9.jpg)
 
 ---
 

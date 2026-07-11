@@ -72,6 +72,7 @@ There are two kinds of charge:
 
 ## Opposite charges attract each other.
 <img src="../images/02/3.png" alt="charges attract" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
+
 ## Like charges repel each other.
 
 <img src="../images/02/4.png" alt="charges repel" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
@@ -91,6 +92,7 @@ There are two common forms of electricity.
 
 
 <img src="../images/02/5.jpg" alt="Static electricity" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
+
 ## Current electricity
 
 <img src="../images/02/6.jpg" alt="Static electricity" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
