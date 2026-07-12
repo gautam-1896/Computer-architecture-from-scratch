@@ -56,13 +56,7 @@ A silicon atom has **4 valence electrons**.
 
 Each silicon atom shares these four electrons with four neighboring silicon atoms, creating four strong covalent bonds.
 
-```text
-        Si
-       / | \
-    Si--Si--Si
-       \ | /
-        Si
-```
+![1](../images/6/1.jpg)
 
 In pure silicon:
 
@@ -123,16 +117,7 @@ The phosphorus atom forms four covalent bonds with neighboring silicon atoms.
 
 However, one electron is left over.
 
-```text
-        Extra Electron
-              e⁻
-               │
-               ▼
-
-      Si──P──Si
-       │     │
-      Si     Si
-```
+![1](../images/6/2.jpg)
 
 This extra electron is only loosely bound and can move through the crystal much more easily than electrons in pure silicon.
 
@@ -155,6 +140,7 @@ N-type silicon contains:
 - Many free electrons
 - Very few holes
 
+![3](../images/6/3.jpg)
 Electrons carry most of the electric current.
 
 These are called the **majority charge carriers**.
@@ -176,6 +162,8 @@ Common examples include:
 - Boron (B)
 - Gallium (Ga)
 - Indium (In)
+
+![5](../images/6/5.jpg)
 
 These are called **acceptor atoms**.
 
@@ -201,15 +189,7 @@ The boron atom can form only three covalent bonds.
 
 One bond remains incomplete.
 
-```text
-      Missing Electron
-
-          ○
-
-      Si──B──Si
-       │     │
-      Si     Si
-```
+![4](../images/6/4.jpg)
 
 The empty space where an electron could exist is called a **hole**.
 
@@ -225,17 +205,7 @@ When a nearby electron moves into the hole, it leaves behind another hole.
 
 As this process repeats, the hole appears to move through the crystal.
 
-```text
-Before
-
-e⁻   ○
-
-After
-
-○   e⁻
-
-Hole appears to move →
-```
+![6](../images/6/6.gif)
 
 This is similar to moving empty seats in a row of chairs.
 
@@ -302,33 +272,7 @@ This distinction is very important when analyzing semiconductor devices.
 
 # Visual Comparison
 
-### N-Type Semiconductor
-
-```text
-Extra Electron
-
-e⁻
-
-Si──P──Si
-│      │
-Si     Si
-```
-
----
-
-### P-Type Semiconductor
-
-```text
-Missing Electron
-
-○
-
-Si──B──Si
-│      │
-Si     Si
-```
-
----
+![7](../images/6/7.jpg)
 
 # Why Both Types Are Needed
 
