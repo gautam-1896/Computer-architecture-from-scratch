@@ -280,15 +280,7 @@ Neither N-type nor P-type silicon alone can perform all the functions required i
 
 Their real power comes from joining them together.
 
-```text
-P-Type
-██████
-
-│
-
-N-Type
-██████
-```
+![7](../images/6/8.jpg)
 
 The boundary between them forms a **PN junction**.
 
