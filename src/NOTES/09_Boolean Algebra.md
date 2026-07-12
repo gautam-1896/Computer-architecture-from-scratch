@@ -13,6 +13,23 @@ As digital circuits become more complex, describing them using only truth tables
 Imagine designing a CPU with billions of transistors by drawing truth tables for every circuit—it would be almost impossible.
 
 Engineers solve this problem using **Boolean Algebra**.
+---
+
+## 💡 Did You Know?
+
+Every instruction executed by a **CPU**—from opening a web browser to running an **AI model**—is ultimately reduced to **Boolean expressions** implemented using **logic gates**.
+
+Before a chip is manufactured, **Electronic Design Automation (EDA)** software automatically performs **millions of Boolean optimizations** to:
+
+- Reduce the number of logic gates
+- Improve processing speed
+- Lower power consumption
+- Minimize chip area
+- Increase overall efficiency and reliability
+
+> **Fun Fact:** Modern processors contain **billions of transistors**, but their operation is still based on the same fundamental **Boolean logic** introduced by **George Boole** in the 19th century.
+
+---
 
 Boolean Algebra is a mathematical system for representing and simplifying logical operations. It allows engineers to describe, analyze, simplify, and optimize digital circuits before they are physically built.
 
@@ -82,20 +99,7 @@ Computers are electronic devices.
 
 Electronic circuits can easily represent two stable states:
 
-```
-Low Voltage
-↓
-
-0
-```
-
-```
-High Voltage
-↓
-
-1
-```
-
+![1](../images/9/1.jpg)
 Because electronic hardware naturally works with two states, Boolean Algebra is the perfect mathematical language for describing digital circuits.
 
 ---
@@ -475,6 +479,9 @@ Similar to ordinary algebra.
 
 This law is frequently used to simplify logic circuits.
 
+
+![2](../images/9/2.jpg)
+
 ---
 
 # De Morgan's Theorems
@@ -489,6 +496,10 @@ They allow engineers to replace AND gates with OR gates (and vice versa) while a
 | (A + B)̅ | A̅ · B̅ |
 
 These theorems are widely used when designing circuits with NAND and NOR gates.
+
+
+![3](../images/9/3.jpg)
+
 
 ---
 
