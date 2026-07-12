@@ -89,14 +89,7 @@ A silicon atom has:
 
 The most important fact for electronics is that it has **4 valence electrons**.
 
-```
-      Valence Shell
 
-          ●
-      ●       ●
-          Si
-           ●
-```
 
 These four valence electrons allow silicon atoms to bond strongly with neighboring atoms.
 
