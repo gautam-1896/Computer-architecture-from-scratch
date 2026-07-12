@@ -50,19 +50,7 @@ Before reading this lesson, you should understand:
 
 A transistor acts like an electronic switch.
 
-```
-Switch OFF
-
-Current
-────X────
-```
-
-```
-Switch ON
-
-Current
-────────►
-```
+![1](../images/8/1.jpg)
 
 One transistor can only perform a simple switching action.
 
@@ -70,18 +58,7 @@ By connecting several transistors together, engineers create circuits that make 
 
 These circuits are called **logic gates**.
 
-```
-Transistors
-      │
-      ▼
-Logic Gates
-      │
-      ▼
-Digital Circuits
-      │
-      ▼
-CPU
-```
+![2](../images/8/2.jpg)
 
 ---
 
@@ -98,21 +75,15 @@ Instead of understanding words or numbers directly, a computer understands only 
 
 Logic gates process these binary values.
 
+![3](../images/8/3.jpg)
+
 ---
 
 # Inputs and Outputs
 
 Every logic gate receives one or more **inputs** and produces one **output**.
 
-```
-Input A ──┐
-          │
-          ▼
-      Logic Gate
-          │
-          ▼
-       Output
-```
+![4](../images/8/4.jpg)
 
 Some gates have one input.
 
@@ -150,6 +121,45 @@ The most common logic gates are:
 
 Some textbooks also include **XNOR**, which is the opposite of XOR.
 
+## Categories of Logic Gates
+
+| Category | Gates |
+|----------|-------|
+| **Basic Gates** | AND, OR, NOT |
+| **Universal Gates** | NAND, NOR |
+| **Special-Purpose Gates** | XOR, XNOR |
+
+### 1. Basic Gates
+These are the fundamental building blocks of digital logic.
+
+- **AND Gate** – Outputs HIGH (1) only when **all** inputs are HIGH.
+- **OR Gate** – Outputs HIGH (1) if **at least one** input is HIGH.
+- **NOT Gate** – Inverts the input (0 becomes 1, and 1 becomes 0).
+
+### 2. Universal Gates
+These gates are called **universal** because **any digital logic circuit** can be built using only one type of these gates.
+
+- **NAND Gate** – Combination of an AND gate followed by a NOT gate.
+- **NOR Gate** – Combination of an OR gate followed by a NOT gate.
+
+> **Note:** NAND and NOR are the most commonly used gates in digital integrated circuits (ICs).
+
+### 3. Special-Purpose Gates
+These gates are designed for specific logical operations.
+
+- **XOR (Exclusive OR)** – Outputs HIGH (1) only when the inputs are **different**.
+- **XNOR (Exclusive NOR)** – Outputs HIGH (1) only when the inputs are **the same**.
+
+---
+
+### Summary
+
+| Category | Purpose |
+|----------|---------|
+| **Basic Gates** | Perform fundamental logical operations. |
+| **Universal Gates** | Can implement any digital circuit. |
+| **Special-Purpose Gates** | Used for comparison, parity checking, and arithmetic circuits. |
+
 ---
 
 # AND Gate
@@ -160,25 +170,7 @@ Think of a secure door with two locks.
 
 Both keys must be turned before the door opens.
 
-```
-A ──┐
-    │
-    ▼
-   AND
-    │
-    ▼
- Output
-```
-
-### Truth Table
-
-| A | B | Output |
-|---|---|--------|
-| 0 | 0 | 0 |
-| 0 | 1 | 0 |
-| 1 | 0 | 0 |
-| 1 | 1 | 1 |
-
+![5](../images/8/5.jpg)
 ### Real-World Example
 
 A laptop starts only if:
@@ -186,6 +178,14 @@ A laptop starts only if:
 - The power button is pressed **AND**
 - The battery has enough charge.
 
+## Memory Trick
+
+### AND = **All**
+
+Think of **AND** as **All**.
+
+- **All** required inputs must be **1 (HIGH)** before the output becomes **1 (HIGH)**.
+- If **any one input is 0 (LOW)**, the output is **0 (LOW)**.
 ---
 
 # OR Gate
@@ -194,25 +194,7 @@ An **OR gate** produces an output of **1 if at least one input is 1**.
 
 Imagine a room with two light switches connected so that either one can turn on the light.
 
-```
-A ──┐
-    │
-    ▼
-    OR
-    │
-    ▼
- Output
-```
-
-### Truth Table
-
-| A | B | Output |
-|---|---|--------|
-| 0 | 0 | 0 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 1 |
-
+![6](../images/8/6.jpg)
 ### Real-World Example
 
 A computer wakes up if:
@@ -220,8 +202,17 @@ A computer wakes up if:
 - A keyboard key is pressed **OR**
 - The mouse is moved.
 
----
 
+## Memory Trick
+
+### OR = **One or More**
+
+Think of **OR** as **One or More**.
+
+- **At least one** input must be **1 (HIGH)** for the output to become **1 (HIGH)**.
+- The output is **0 (LOW)** only when **all inputs are 0 (LOW)**.
+
+---
 # NOT Gate
 
 A **NOT gate** has only one input.
@@ -231,15 +222,7 @@ It reverses the input.
 - 0 becomes 1.
 - 1 becomes 0.
 
-```
-Input
-  │
-  ▼
- NOT
-  │
-  ▼
-Output
-```
+![7](../images/8/7.jpg)
 
 ### Truth Table
 
@@ -260,15 +243,7 @@ A **NAND gate** is simply an AND gate followed by a NOT gate.
 
 It gives the opposite result of AND.
 
-### Truth Table
-
-| A | B | Output |
-|---|---|--------|
-| 0 | 0 | 1 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 0 |
-
+![8](../images/8/8.jpg)
 ### Why Is NAND Important?
 
 The NAND gate is called a **universal gate** because any digital circuit can be built using only NAND gates.
@@ -281,14 +256,7 @@ Many real processors are built primarily from NAND-based structures.
 
 A **NOR gate** is an OR gate followed by a NOT gate.
 
-### Truth Table
-
-| A | B | Output |
-|---|---|--------|
-| 0 | 0 | 1 |
-| 0 | 1 | 0 |
-| 1 | 0 | 0 |
-| 1 | 1 | 0 |
+![9](../images/8/9.jpg)
 
 Like NAND, NOR is also a **universal gate**.
 
@@ -300,15 +268,7 @@ Like NAND, NOR is also a **universal gate**.
 
 It outputs **1 only when the inputs are different**.
 
-### Truth Table
-
-| A | B | Output |
-|---|---|--------|
-| 0 | 0 | 0 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 0 |
-
+![10](../images/8/10.jpg)
 ### Real-World Example
 
 XOR is used in:
@@ -326,14 +286,7 @@ An **XNOR gate** is the opposite of XOR.
 
 It outputs **1 when the inputs are the same**.
 
-### Truth Table
-
-| A | B | Output |
-|---|---|--------|
-| 0 | 0 | 1 |
-| 0 | 1 | 0 |
-| 1 | 0 | 0 |
-| 1 | 1 | 1 |
+![11](../images/8/11.jpg)
 
 XNOR is commonly used in digital comparators.
 
@@ -361,45 +314,13 @@ It is a small circuit made from transistors.
 
 For example:
 
-```text
-Transistor
-      │
-      ▼
 
-Several Transistors
-      │
-      ▼
 
-AND Gate
-```
+![12](../images/8/12.jpg)
 
-```text
-AND Gate
-      │
-      ▼
 
-Several Gates
-      │
-      ▼
 
-Adder
-```
 
-```text
-Adder
-      │
-      ▼
-
-Arithmetic Logic Unit (ALU)
-```
-
-```text
-ALU
-      │
-      ▼
-
-CPU
-```
 
 This layered design allows engineers to build incredibly complex systems from very simple building blocks.
 
@@ -444,6 +365,9 @@ Door Unlock ───┘
                ▼
           Open Door
 ```
+
+
+![13](../images/8/13.jpg)
 
 If either condition is false, the door stays closed.
 

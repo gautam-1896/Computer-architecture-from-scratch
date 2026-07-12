@@ -88,15 +88,7 @@ A **crystal** is a solid material in which atoms are arranged in a regular repea
 
 Silicon atoms form one of the most organized crystal structures found in nature.
 
-```text
-Si──Si──Si──Si
-│   │   │   │
-Si──Si──Si──Si
-│   │   │   │
-Si──Si──Si──Si
-│   │   │   │
-Si──Si──Si──Si
-```
+![1](../images/7/1.jpg)
 
 Every silicon atom shares electrons with four neighboring atoms.
 
@@ -128,21 +120,7 @@ The crystal lattice determines:
 
 Earlier, we learned that electrons occupy **energy levels** around an atom.
 
-```text
-Outer Shell
-
-e⁻
-
-──────────────
-
-Inner Shell
-
-e⁻ e⁻
-
-──────────────
-
-Nucleus
-```
+![2](../images/7/2.jpg)
 
 Electrons closer to the nucleus have lower energy.
 
@@ -155,24 +133,36 @@ Electrons farther away have higher energy.
 When billions of silicon atoms join together, their individual energy levels overlap.
 
 Instead of separate energy levels, they form **energy bands**.
+# Why Bands Form
+
+An isolated atom has **discrete (individual) electron energy levels**. Electrons can occupy only these specific energy levels.
+
+When **billions of identical atoms** come together to form a crystal (such as silicon), the atoms are packed so closely that their outer electron wavefunctions begin to **overlap and interact**.
+
+Because of the **Pauli Exclusion Principle**, two electrons in the same quantum system cannot have exactly the same quantum state. As a result, the originally identical energy levels of neighboring atoms **split into many slightly different energy levels**.
+
+Since a crystal contains an enormous number of atoms (typically around **10²³ atoms**), each original energy level splits into **about 10²³ extremely closely spaced energy levels**. These levels are so close together that they appear to form **continuous energy bands** rather than separate levels.
+
+This process creates two important bands:
+
+- **Valence Band (VB):** The band formed from the outer electrons that participate in chemical bonding. It is normally filled with electrons.
+- **Conduction Band (CB):** The higher-energy band where electrons are free to move through the crystal, allowing electrical conduction.
+
+Between these two bands lies the **band gap (forbidden energy gap)**, an energy region where no electron energy states exist.
+
+---
+
+## In Simple Terms
+
+- **One atom** → Separate (discrete) energy levels.
+- **Many atoms together** → Atomic interactions cause each level to split.
+- **Billions of atoms** → Millions of billions of split levels merge into continuous **energy bands**.
+
+Therefore, solids have **energy bands** instead of the discrete energy levels found in isolated atoms. The size of the **band gap** determines whether a material behaves as a **conductor**, **semiconductor**, or **insulator**.
 
 Think of this as many staircases joining together to become one large platform.
 
-```
-One Atom
-
-Level
-Level
-Level
-
-↓
-
-Millions of Atoms
-
-═══════════════
-
-Energy Band
-```
+![3](../images/7/2.webp)
 
 These bands determine whether electrons can move freely.
 
@@ -188,25 +178,18 @@ The **valence band** contains electrons involved in covalent bonds.
 
 These electrons normally cannot move freely.
 
-```text
-Valence Band
 
-e⁻ e⁻ e⁻ e⁻
-```
 
----
 
 ## 2. Conduction Band
 
 The **conduction band** contains electrons that are free to move throughout the crystal.
 
-```text
-Conduction Band
 
-e⁻ → → → →
-```
 
 Electrons in this band create electric current.
+
+![3](../images/7/3.jpg)
 
 ---
 
@@ -216,17 +199,7 @@ Between the valence band and conduction band is a region where electrons cannot 
 
 This region is called the **band gap**.
 
-```text
-Conduction Band
-══════════════════
-
-     Band Gap
-
-----------------
-
-Valence Band
-══════════════════
-```
+![4](../images/7/4.jpg)
 
 The size of this gap determines whether a material is:
 
@@ -238,39 +211,7 @@ The size of this gap determines whether a material is:
 
 # Comparing Materials Using Band Gaps
 
-```text
-Conductor
-
-Valence Band
-═══════════
-Conduction Band
-
-(No gap)
-
---------------------
-
-Semiconductor
-
-Conduction Band
-═══════════
-
- Small Gap
-
-Valence Band
-═══════════
-
---------------------
-
-Insulator
-
-Conduction Band
-═══════════
-
-Large Gap
-
-Valence Band
-═══════════
-```
+![5](../images/7/5.jpg)
 
 ---
 
@@ -293,33 +234,28 @@ This means:
 
 This controlled movement makes silicon perfect for electronics.
 
+
+![6](../images/7/6.jpg)
+
+
 ---
 
 # Electron Excitation
 
 When an electron gains enough energy, it can jump across the band gap.
 
-Possible energy sources include:
+For an electron to move from the **valence band** to the **conduction band**, it must gain energy equal to or greater than the **band gap energy**.
 
-- Heat
-- Light
-- Electric fields
+Electrons can gain this energy from several sources:
 
-```text
-Conduction Band
+- **Heat (Thermal Energy):** Increased temperature causes atoms to vibrate, allowing some electrons to gain enough energy to cross the band gap.
+- **Light (Photons):** A photon with energy equal to or greater than the band gap can excite an electron into the conduction band. This is the principle behind **solar cells** and **photodiodes**.
+- **Electric Fields:** A strong electric field accelerates electrons, increasing their energy until they can move into the conduction band.
+- **High-Energy Particles:** Particles such as alpha particles, beta particles, X-rays, or gamma rays can transfer sufficient energy to electrons, exciting them into the conduction band.
 
-e⁻
+> **Key Point:** An electron can conduct electricity only after it gains enough energy to cross the **band gap** and enter the **conduction band**.
 
-▲
-
-Band Gap
-
-▲
-
-Valence Band
-
-e⁻
-```
+![7](../images/7/7.jpg)
 
 This process is called **electron excitation**.
 
@@ -334,23 +270,7 @@ When an electron leaves the valence band:
 
 That empty position is called a **hole**.
 
-```text
-Before
-
-Valence Band
-
-e⁻ e⁻ e⁻
-
-After
-
-Conduction Band
-
-e⁻
-
-Valence Band
-
-e⁻ ○ e⁻
-```
+![8](../images/7/8.jpg)
 
 The electron and hole are created together.
 
@@ -362,21 +282,9 @@ They are called an **electron-hole pair**.
 
 Eventually, a free electron may fall back into a hole.
 
-```text
-e⁻
+![9](../images/7/9.jpg)
 
-↓
 
-Hole
-
-○
-
-↓
-
-Filled
-```
-
-This process is called **recombination**.
 
 After recombination:
 
@@ -395,21 +303,19 @@ Current in semiconductors is carried by:
 
 Negative charge carriers.
 
-```text
-e⁻ → → →
-```
 
----
+
+
 
 ## Holes
 
 Positive charge carriers.
 
-```text
-○ → → →
-```
+
 
 Both contribute to electrical conduction.
+
+![10](../images/7/10.jpg)
 
 ---
 
@@ -419,17 +325,7 @@ Pure silicon is called an **intrinsic semiconductor**.
 
 Current flows because thermal energy creates small numbers of electron-hole pairs.
 
-```
-Heat
-
-↓
-
-Electron jumps
-
-↓
-
-Electron + Hole
-```
+![11](../images/7/11.jpg)
 
 This conductivity is relatively low.
 
@@ -439,19 +335,7 @@ This conductivity is relatively low.
 
 Doping introduces additional charge carriers.
 
-```
-Intrinsic
-
-Few carriers
-
-↓
-
-Doping
-
-↓
-
-Many carriers
-```
+![12](../images/7/12.webp)
 
 N-type silicon has many electrons.
 
