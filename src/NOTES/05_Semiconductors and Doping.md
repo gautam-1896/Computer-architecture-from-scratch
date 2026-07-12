@@ -89,7 +89,7 @@ A silicon atom has:
 
 The most important fact for electronics is that it has **4 valence electrons**.
 
-
+![1](../images/5/1.jpg)
 
 These four valence electrons allow silicon atoms to bond strongly with neighboring atoms.
 
@@ -101,13 +101,7 @@ A **covalent bond** is formed when two atoms share electrons.
 
 In a silicon crystal, every silicon atom shares its four valence electrons with four neighboring silicon atoms.
 
-```
-          Si
-         / | \
-      Si--Si--Si
-         \ | /
-          Si
-```
+![2](../images/5/2.jpg)
 
 Each line represents a shared pair of electrons.
 
@@ -121,16 +115,7 @@ Millions of silicon atoms join together in a repeating three-dimensional pattern
 
 A simplified view looks like this:
 
-```text
-Si──Si──Si──Si
-│   │   │   │
-Si──Si──Si──Si
-│   │   │   │
-Si──Si──Si──Si
-│   │   │   │
-Si──Si──Si──Si
-```
-
+![1](../images/5/3.jpg)
 Every silicon atom forms four covalent bonds.
 
 This regular structure gives silicon its unique electrical properties.
@@ -267,23 +252,8 @@ Nearly all semiconductor devices use **extrinsic semiconductors**.
 
 # Visualizing Doping
 
-Before doping:
 
-```text
-Si Si Si Si
-Si Si Si Si
-Si Si Si Si
-Si Si Si Si
-```
-
-After doping:
-
-```text
-Si Si Si Si
-Si P  Si Si
-Si Si Si Si
-Si Si Si B
-```
+![4](../images/5/4.jpg)
 
 Only a few atoms are replaced.
 
