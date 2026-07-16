@@ -73,6 +73,7 @@ Combinational Circuit
        ▼
 Current Output
 ```
+![1](../images/10/1.jpg)
 
 If the inputs change, the output changes immediately (after a very small propagation delay).
 
@@ -123,6 +124,7 @@ ALU
       ▼
 CPU
 ```
+![2](..\images\8\12.jpg)
 
 This layered design allows engineers to create increasingly powerful digital systems.
 
@@ -155,7 +157,7 @@ A ───┐
      └──► Carry
 B ───┘
 ```
-
+![2](..\images\10\2.jpg)
 ### Truth Table
 
 | A | B | Sum | Carry |
@@ -195,16 +197,7 @@ Outputs:
 
 ### Block Diagram
 
-```text
-A ──────┐
-         │
-B ───────┼────► Full Adder
-         │
-Cin ─────┘
-             │
-             ├──► Sum
-             └──► Carry Out
-```
+![2](..\images\10\3.jpg)
 
 ### Truth Table
 
@@ -241,20 +234,9 @@ It is often called a **data selector**.
 
 ### Example: 4-to-1 Multiplexer
 
-```text
-I0 ─┐
-I1 ─┤
-I2 ─┤
-I3 ─┘
-      │
-      ▼
-     MUX
-      ▲
-Select Lines
-      │
-      ▼
-   Output
-```
+
+![2](..\images\10\4.jpg)
+
 
 ### Real-World Analogy
 
@@ -280,17 +262,7 @@ A **Demultiplexer** performs the opposite function of a multiplexer.
 It sends **one input** to **one of many outputs**.
 
 ### Diagram
-
-```text
-Input
-  │
-  ▼
-DEMUX
- │ │ │ │
- ▼ ▼ ▼ ▼
-O0 O1 O2 O3
-```
-
+![2](..\images\10\5.jpg)
 ### Applications
 
 - Memory selection
@@ -324,7 +296,7 @@ Output
 
 3 Output Bits
 ```
-
+![2](..\images\10\6.jpg)
 ### Applications
 
 - Keyboard controllers
@@ -341,15 +313,21 @@ It converts **binary input into multiple output lines**.
 
 ### Example
 
-```text
-Binary Input
+![2](..\images\10\7.jpg)
 
-101
 
-↓
+## Why Decoders Are Important
 
-Output Line 5 Active
-```
+A **decoder** converts an **n-bit binary input** into one of **2ⁿ unique outputs**, allowing a digital system to select exactly one device or operation at a time.
+
+Processors use decoders to:
+
+- **Decode machine instructions** into the required control signals.
+- **Select memory locations** during memory read and write operations.
+- **Enable registers** so that only the selected register is accessed.
+- **Activate specific hardware blocks** such as the ALU, memory, input/output (I/O) devices, or control circuits.
+
+> **Key Idea:** A decoder acts like a **digital selector**—it takes a binary code as input and activates **only one corresponding output**, ensuring that the correct hardware component responds.
 
 ### Applications
 
@@ -372,17 +350,7 @@ It determines whether:
 
 ### Block Diagram
 
-```text
-A ──┐
-    │
-    ▼
-Comparator
-    │
-    ├──► A > B
-    ├──► A = B
-    └──► A < B
-B ──┘
-```
+![2](..\images\10\8.jpg)
 
 ### Applications
 
