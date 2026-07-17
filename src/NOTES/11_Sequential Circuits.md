@@ -63,18 +63,7 @@ A **sequential circuit** is a digital circuit whose **output depends on both**:
 
 Unlike combinational circuits, sequential circuits have **memory**.
 
-```text
-Current Inputs
-       │
-       ▼
-Sequential Circuit
-       ▲
-       │
-Previous State (Memory)
-       │
-       ▼
-Current Output
-```
+![1](../images/11/1.jpg)
 
 This ability to remember previous information is the defining feature of sequential circuits.
 
@@ -131,15 +120,7 @@ A sequential circuit:
 
 A sequential circuit stores information by feeding part of its output back into its input.
 
-```text
-      ┌─────────────┐
-Input │             │ Output
-─────►│   Circuit   ├──────►
-      │             │
-      └─────▲───────┘
-            │
-        Feedback
-```
+![2](../images/11/2.jpg)
 
 This feedback allows the circuit to "remember" a previous value.
 
@@ -151,13 +132,7 @@ Most sequential circuits use a **clock signal**.
 
 A **clock** is a repeating electrical pulse that synchronizes operations inside a digital system.
 
-```text
-Voltage
-
-1 ──┐    ┌────┐    ┌────┐
-    │    │    │    │    │
-0 ──┴────┘    └────┘    └────► Time
-```
+![3](../images/11/3.jpg)
 
 Each transition of the clock tells circuits **when** to update their stored values.
 
@@ -185,14 +160,8 @@ The clock keeps every part of the processor working together.
 
 A **clock cycle** is one complete repetition of the clock waveform.
 
-```text
-High
- ────
-     │
-Low  ────
 
-One Clock Cycle
-```
+![3](../images/11/3.jpg)
 
 During each cycle, a processor may:
 
@@ -237,18 +206,8 @@ Outputs:
 
 ### Simplified Block Diagram
 
-```text
- S ───►
 
-      SR Latch
-
- R ───►
-
-      │
-      ▼
-
-      Q
-```
+![4](../images/11/4.jpg)
 
 Operation:
 
@@ -283,18 +242,8 @@ Output:
 
 ### Block Diagram
 
-```text
-Data ─────►
 
-          D Flip-Flop
-
-Clock ───►
-
-            │
-            ▼
-
-            Q
-```
+![5](../images/11/5.jpg)
 
 When the clock edge occurs, the value at **D** is copied to **Q**.
 
@@ -302,29 +251,8 @@ When the clock edge occurs, the value at **D** is copied to **Q**.
 
 # Timing Example
 
-Suppose:
 
-```text
-Clock ↑
-
-D = 1
-
-↓
-
-Q becomes 1
-```
-
-Later:
-
-```text
-Clock ↑
-
-D = 0
-
-↓
-
-Q becomes 0
-```
+![6](../images/11/6.jpg)
 
 The output changes only when the clock triggers it.
 
@@ -336,13 +264,8 @@ A **register** is a group of flip-flops used to store multiple bits.
 
 Example:
 
-```
-8 Flip-Flops
 
-↓
-
-8-Bit Register
-```
+![7](../images/11/7.jpg)
 
 ```text
 Bit7 Bit6 Bit5 Bit4 Bit3 Bit2 Bit1 Bit0
