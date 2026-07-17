@@ -109,22 +109,8 @@ We will study **sequential circuits** in the next chapter.
 
 Every combinational circuit is built from logic gates.
 
-```
-Transistors
-      │
-      ▼
-Logic Gates
-      │
-      ▼
-Combinational Circuits
-      │
-      ▼
-ALU
-      │
-      ▼
-CPU
-```
-![2](..\images\8\12.jpg)
+
+![Building Combinational Circuits Hierarchy](../images/8/12.jpg)
 
 This layered design allows engineers to create increasingly powerful digital systems.
 
@@ -146,17 +132,7 @@ Outputs:
 
 ### Block Diagram
 
-```text
-A ───┐
-     │
-     ▼
- Half Adder
-     │
-     ├──► Sum
-     │
-     └──► Carry
-B ───┘
-```
+
 ![2](..\images\10\2.jpg)
 ### Truth Table
 
