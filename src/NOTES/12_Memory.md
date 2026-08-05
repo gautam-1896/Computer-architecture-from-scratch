@@ -130,16 +130,7 @@ or
 
 Eight bits form one **byte**.
 
-```text
-Bit  Bit  Bit  Bit  Bit  Bit  Bit  Bit
- │    │    │    │    │    │    │    │
- ▼    ▼    ▼    ▼    ▼    ▼    ▼    ▼
-1    0    1    0    1    1    0    0
-
-        =
-
-       1 Byte
-```
+![1](../images/12/1.jpg)
 
 Larger units include:
 
@@ -190,6 +181,7 @@ Address      Data
 
 0011         00110011
 ```
+![2](../images/12/2.jpg)
 
 The CPU accesses memory by specifying an address.
 
@@ -218,6 +210,7 @@ Memory
 
 Returns Data
 ```
+![3](../images/12/3.jpg)
 
 ---
 
@@ -240,6 +233,7 @@ New Data
 
 Memory Stores It
 ```
+![4](../images/12/4.jpg)
 
 ---
 
@@ -260,6 +254,8 @@ Power OFF
 
 Data Lost
 ```
+![5](../images/12/5.webp)
+
 
 Volatile memory is extremely fast but temporary.
 
@@ -283,6 +279,9 @@ Power OFF
 
 Data Remains
 ```
+
+![6](../images/12/6.jpg)
+
 
 This type of memory is used for permanent storage.
 
@@ -379,6 +378,10 @@ Modern processors usually have multiple cache levels.
 | L2 | Fast | Medium |
 | L3 | Slower than L1/L2 | Largest on-chip cache |
 
+
+![7](../images/12/7.jpg)
+
+
 Some advanced systems also use an L4 cache, but L1–L3 are the most common.
 
 ---
@@ -395,6 +398,8 @@ Registers store:
 - Addresses
 - Instructions
 - Temporary values
+![8](../images/12/8.jpg)
+
 
 Because they are inside the processor, accessing them is much faster than accessing cache or RAM.
 

@@ -133,7 +133,10 @@ Outputs:
 ### Block Diagram
 
 
+
 ![2](..\images\10\2.jpg)
+
+
 ### Truth Table
 
 | A | B | Sum | Carry |
