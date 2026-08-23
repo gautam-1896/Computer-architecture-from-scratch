@@ -281,6 +281,7 @@ Tick
 
 Tick
 ```
+![1](../images/19/1.jpg)
 
 Each tick is called a **clock cycle**.
 

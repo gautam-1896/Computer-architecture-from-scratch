@@ -84,25 +84,7 @@ A complete computer also includes memory, storage, input/output devices, buses, 
 
 # The Main Components
 
-A simplified computer consists of:
-
-```text
-                 +-------------------+
-                 |    Input Devices  |
-                 +---------+---------+
-                           |
-                           v
-+-----------+      +--------+--------+      +------------+
-| Storage   | ---> |      Memory     | <--> |    CPU     |
-| (SSD/HDD) |      |      (RAM)      |      |            |
-+-----------+      +--------+--------+      +------+-----+
-                           |                      |
-                           v                      v
-                  +----------------+     +----------------+
-                  | Output Devices |     | System Bus     |
-                  +----------------+     +----------------+
-```
-
+![1](../images/20/1.png)
 Every modern computer follows this basic idea, although real systems are much more complex.
 
 ---
@@ -236,6 +218,8 @@ CPU
 
 └──────── Output
 ```
+![2](../images/20/2.jpg)
+
 
 The bus carries:
 
@@ -519,6 +503,8 @@ A simplified diagram:
         v                   v
      Input              Output
 ```
+
+![3](../images/20/3.png)
 
 This architecture remains the foundation of most general-purpose computers today.
 
