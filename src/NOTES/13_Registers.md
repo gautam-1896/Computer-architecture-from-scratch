@@ -97,18 +97,7 @@ Although a processor may contain only a small number of registers compared to RA
 
 From previous chapters, we know:
 
-```text
-Transistors
-      │
-      ▼
-Logic Gates
-      │
-      ▼
-Flip-Flops
-      │
-      ▼
-Registers
-```
+![1](../images/13/1.png)
 
 A register is simply a group of flip-flops.
 
