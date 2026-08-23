@@ -62,6 +62,7 @@ A simplified view is:
 
 ![1](../images/14/1.png)
 
+
 The ALU itself does **not** decide *which* operation to perform. It waits for instructions from the **Control Unit**, which tells it whether to add, subtract, compare, or perform another operation.
 
 ---
@@ -430,6 +431,7 @@ Only the selected operation's result is sent to the output.
 A simplified CPU organization is:
 
 ![2](../images/14/2.png)
+
 The Control Unit tells the ALU what to do, the registers supply the data, and the ALU performs the computation.
 
 ---
@@ -612,4 +614,9 @@ Now that we understand how the CPU performs calculations, the next step is to le
 In the next chapter, **Control Unit**, we will study how the CPU fetches instructions, decodes them, controls data movement between components, generates control signals, and manages the **Fetch–Decode–Execute Cycle** that drives every computer program.
 
 
-➡️ **Next:** [15 Control Unit](15_Control Unit.md)
+
+---
+
+### 📚 Navigation
+
+[← Registers](13_Registers.md) | [📖 Contents](../../README.md) | [Next → Control Unit (CU)](15_Control%20Unit.md)

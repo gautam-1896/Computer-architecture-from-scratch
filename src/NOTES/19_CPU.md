@@ -281,7 +281,9 @@ Tick
 
 Tick
 ```
+
 ![1](../images/19/1.jpg)
+
 
 Each tick is called a **clock cycle**.
 
@@ -773,7 +775,6 @@ Instead of studying existing CPUs, we will create one ourselves.
 In the next chapter, **Building a Complete 8-bit CPU**, we will design a simple but fully functional processor from scratch.
 
 
-➡️ **Next:** [20 Complete Computer](20_Complete Computer.md)
 
 Using everything learned in this book, we will build:
 
@@ -787,3 +788,9 @@ Using everything learned in this book, we will build:
 - A CPU simulator
 
 By the end of the project, you will have a working programmable CPU capable of executing real machine instructions, providing a practical understanding of how modern computers operate.
+
+---
+
+### 📚 Navigation
+
+[← Assembler and Assembly Language](18_Assembler.md) | [📖 Contents](../../README.md) | [Next → Complete Computer](20_Complete%20Computer.md)

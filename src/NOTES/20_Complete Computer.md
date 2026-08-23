@@ -85,6 +85,7 @@ A complete computer also includes memory, storage, input/output devices, buses, 
 # The Main Components
 
 ![1](../images/20/1.png)
+
 Every modern computer follows this basic idea, although real systems are much more complex.
 
 ---
@@ -218,7 +219,9 @@ CPU
 
 └──────── Output
 ```
+
 ![2](../images/20/2.jpg)
+
 
 
 The bus carries:
@@ -506,6 +509,7 @@ A simplified diagram:
 
 ![3](../images/20/3.png)
 
+
 This architecture remains the foundation of most general-purpose computers today.
 
 ---
@@ -730,3 +734,11 @@ Each project reinforces the concepts from this book and transforms theoretical k
 ---
 
 > **"The best way to truly understand a computer is not just to use one—but to build one."**
+
+---
+
+### 📚 Navigation
+
+[← CPU (Central Processing Unit)](19_CPU.md) | [📖 Contents](../../README.md)
+
+**End of Computer Architecture From Scratch**

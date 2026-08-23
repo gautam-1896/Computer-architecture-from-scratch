@@ -73,7 +73,9 @@ Combinational Circuit
        ▼
 Current Output
 ```
+
 ![1](../images/10/1.jpg)
+
 
 If the inputs change, the output changes immediately (after a very small propagation delay).
 
@@ -109,8 +111,8 @@ We will study **sequential circuits** in the next chapter.
 
 Every combinational circuit is built from logic gates.
 
-
 ![Building Combinational Circuits Hierarchy](../images/8/12.jpg)
+
 
 This layered design allows engineers to create increasingly powerful digital systems.
 
@@ -132,9 +134,8 @@ Outputs:
 
 ### Block Diagram
 
-
-
 ![2](..\images\10\2.jpg)
+
 
 
 ### Truth Table
@@ -178,6 +179,7 @@ Outputs:
 
 ![2](..\images\10\3.jpg)
 
+
 ### Truth Table
 
 | A | B | Cin | Sum | Cout |
@@ -213,8 +215,8 @@ It is often called a **data selector**.
 
 ### Example: 4-to-1 Multiplexer
 
-
 ![2](..\images\10\4.jpg)
+
 
 
 ### Real-World Analogy
@@ -241,7 +243,9 @@ A **Demultiplexer** performs the opposite function of a multiplexer.
 It sends **one input** to **one of many outputs**.
 
 ### Diagram
+
 ![2](..\images\10\5.jpg)
+
 ### Applications
 
 - Memory selection
@@ -275,7 +279,9 @@ Output
 
 3 Output Bits
 ```
+
 ![2](..\images\10\6.jpg)
+
 ### Applications
 
 - Keyboard controllers
@@ -293,6 +299,7 @@ It converts **binary input into multiple output lines**.
 ### Example
 
 ![2](..\images\10\7.jpg)
+
 
 
 ## Why Decoders Are Important
@@ -330,6 +337,7 @@ It determines whether:
 ### Block Diagram
 
 ![2](..\images\10\8.jpg)
+
 
 ### Applications
 
@@ -584,4 +592,9 @@ Modern computers, however, need to remember values over time. This is made possi
 In the next chapter, **Sequential Circuits**, we will explore **latches, flip-flops, registers, counters, and clock signals**—the essential components that allow computers to store data and execute programs step by step.
 
 
-➡️ **Next:** [11 Sequential Circuits](11_Sequential Circuits.md)
+
+---
+
+### 📚 Navigation
+
+[← Boolean Algebra](09_Boolean%20Algebra.md) | [📖 Contents](../../README.md) | [Next → Sequential Circuits](11_Sequential%20Circuits.md)

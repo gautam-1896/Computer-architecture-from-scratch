@@ -718,6 +718,11 @@ The next step is to combine everything we have studied—logic gates, registers,
 In the next chapter, **CPU Design and Implementation**, we will bring together everything learned throughout this book to design and build a simple **8-bit programmable CPU**.
 
 
-➡️ **Next:** [19 CPU](19_CPU.md)
 
 We will study how instructions move through the processor, how each hardware component interacts, and how a complete CPU executes real programs from start to finish. This marks the transition from learning individual components to constructing an entire computer processor from scratch.
+
+---
+
+### 📚 Navigation
+
+[← Instruction Set Architecture (ISA)](17_Instruction%20Set%20Architecture.md) | [📖 Contents](../../README.md) | [Next → CPU (Central Processing Unit)](19_CPU.md)

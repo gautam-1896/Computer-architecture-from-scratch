@@ -90,6 +90,7 @@ Silicon atoms form one of the most organized crystal structures found in nature.
 
 ![1](../images/7/1.jpg)
 
+
 Every silicon atom shares electrons with four neighboring atoms.
 
 This repeating arrangement is called a **crystal lattice**.
@@ -121,6 +122,7 @@ The crystal lattice determines:
 Earlier, we learned that electrons occupy **energy levels** around an atom.
 
 ![2](../images/7/2.jpg)
+
 
 Electrons closer to the nucleus have lower energy.
 
@@ -164,6 +166,7 @@ Think of this as many staircases joining together to become one large platform.
 
 ![3](../images/7/2.webp)
 
+
 These bands determine whether electrons can move freely.
 
 ---
@@ -191,6 +194,7 @@ Electrons in this band create electric current.
 
 ![3](../images/7/3.jpg)
 
+
 ---
 
 # The Band Gap
@@ -200,6 +204,7 @@ Between the valence band and conduction band is a region where electrons cannot 
 This region is called the **band gap**.
 
 ![4](../images/7/4.jpg)
+
 
 The size of this gap determines whether a material is:
 
@@ -212,6 +217,7 @@ The size of this gap determines whether a material is:
 # Comparing Materials Using Band Gaps
 
 ![5](../images/7/5.jpg)
+
 
 ---
 
@@ -234,8 +240,8 @@ This means:
 
 This controlled movement makes silicon perfect for electronics.
 
-
 ![6](../images/7/6.jpg)
+
 
 
 ---
@@ -257,6 +263,7 @@ Electrons can gain this energy from several sources:
 
 ![7](../images/7/7.jpg)
 
+
 This process is called **electron excitation**.
 
 ---
@@ -272,6 +279,7 @@ That empty position is called a **hole**.
 
 ![8](../images/7/8.jpg)
 
+
 The electron and hole are created together.
 
 They are called an **electron-hole pair**.
@@ -283,6 +291,7 @@ They are called an **electron-hole pair**.
 Eventually, a free electron may fall back into a hole.
 
 ![9](../images/7/9.jpg)
+
 
 
 
@@ -317,6 +326,7 @@ Both contribute to electrical conduction.
 
 ![10](../images/7/10.jpg)
 
+
 ---
 
 # Intrinsic Semiconductor Physics
@@ -327,6 +337,7 @@ Current flows because thermal energy creates small numbers of electron-hole pair
 
 ![11](../images/7/11.jpg)
 
+
 This conductivity is relatively low.
 
 ---
@@ -336,6 +347,7 @@ This conductivity is relatively low.
 Doping introduces additional charge carriers.
 
 ![12](../images/7/12.webp)
+
 
 N-type silicon has many electrons.
 
@@ -543,4 +555,9 @@ By combining **P-type** and **N-type** silicon, engineers create a device that c
 In the next chapter, **PN Junction**, we will explore how this remarkable junction forms and why it is the cornerstone of semiconductor devices.
 
 
-➡️ **Next:** [08 Logic Gates](08_Logic Gates.md)
+
+---
+
+### 📚 Navigation
+
+[← P-Type and N-Type Semiconductors](06_P-Type%20and%20N-Type%20Semiconductors.md) | [📖 Contents](../../README.md) | [Next → Logic Gates](08_Logic%20Gates.md)

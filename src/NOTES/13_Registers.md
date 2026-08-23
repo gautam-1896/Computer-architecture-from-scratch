@@ -99,6 +99,7 @@ From previous chapters, we know:
 
 ![1](../images/13/1.png)
 
+
 A register is simply a group of flip-flops.
 
 Each flip-flop stores **one bit**.
@@ -630,4 +631,9 @@ Now that we understand how the CPU stores data in registers, the next step is to
 In the next chapter, **Arithmetic Logic Unit (ALU)**, we will explore how the CPU performs operations such as **addition, subtraction, bitwise logic, comparisons, and shifts**, making it the computational core of every processor.
 
 
-➡️ **Next:** [14 ALU](14_ALU.md)
+
+---
+
+### 📚 Navigation
+
+[← Memory](12_Memory.md) | [📖 Contents](../../README.md) | [Next → Arithmetic Logic Unit (ALU)](14_ALU.md)

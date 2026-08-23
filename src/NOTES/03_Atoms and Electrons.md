@@ -80,6 +80,7 @@ The answer is the **atom**.
 
 <img src="../images/3/1.jpg" alt="atom" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
+
 An **atom** is the smallest unit of an element that still keeps the chemical properties of that element.
 
 Think of an atom as a tiny building block.
@@ -105,8 +106,8 @@ An atom consists of two main parts:
 1. The nucleus
 2. The electron cloud
 
-
 <img src="../images/3/1.jpg" alt="atom" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
+
 
 The **nucleus** is located at the center.
 
@@ -190,6 +191,7 @@ Now imagine those balls are electrons moving through a wire.
 
 <img src="../images/02/10.jpg" alt="current flow" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
+
 When many electrons move together, we observe **electric current**.
 
 This is the basis of all electronic devices.
@@ -205,6 +207,7 @@ They occupy specific regions called **electron shells** (or energy levels).
 A simplified model looks like this:
 
 <img src="../images/3/3.jpg" alt="electron shell" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
+
 
 The shell farthest from the nucleus is called the **outer shell** or **valence shell**.
 
@@ -236,6 +239,7 @@ Electrons are tightly held in some materials but loosely held in others.
 
 <img src="../images/3/5.jpg" alt="electron move" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
+
 If an electron can move easily from one atom to another, electricity flows more easily.
 
 Materials differ in how easily they allow this movement.
@@ -264,7 +268,9 @@ Example:
 
 6 Electrons
 ```
+
 <img src="../images/3/6.jpg" alt="neutal" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
+
 Positive and negative charges cancel each other.
 
 The atom has **no overall charge**.
@@ -305,6 +311,7 @@ A copper wire contains billions upon billions of copper atoms.
 
 <img src="../images/3/7.jpg" alt="copper" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
 
+
 Each copper atom has loosely bound outer electrons.
 
 These electrons can move through the wire when voltage is applied.
@@ -327,6 +334,7 @@ Silicon behaves differently.
 Its outer electrons are more tightly bound.
 
 <img src="../images/3/8.jpg" alt="silicon" style="max-width:75%;height:auto;display:block;margin:0.5em auto;" />
+
 
 This makes silicon a **semiconductor**, meaning its conductivity can be controlled.
 
@@ -504,7 +512,6 @@ The ideas in this chapter prepare you for understanding why different materials 
 In the next lesson, we will compare **conductors, insulators, and semiconductors** and discover why silicon became the foundation of modern computing.
 
 
-➡️ **Next:** [04 Conductors, Insulators, and Semiconductors](04_Conductors, Insulators, and Semiconductors.md)
 
 ---
 
@@ -517,3 +524,9 @@ Now that we know **what atoms are** and **how electrons move**, we are ready to 
 The answer lies in the arrangement of their electrons.
 
 In the next chapter, **Conductors, Insulators, and Semiconductors**, we will explore the electrical properties of different materials and take our first step toward understanding how transistors are possible.
+
+---
+
+### 📚 Navigation
+
+[← Electricity Basics](02_electricity_basics.md) | [📖 Contents](../../README.md) | [Next → Conductors, Insulators, and Semiconductors](04_Conductors%2C%20Insulators%2C%20and%20Semiconductors.md)

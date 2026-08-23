@@ -70,6 +70,7 @@ Think of three different classrooms.
 
 ![1](../images/4/2.jpg)
 
+
 Students can easily move around.
 
 This is like a **conductor**.
@@ -79,6 +80,7 @@ This is like a **conductor**.
 ### Classroom 2 – Students Cannot Leave Their Seats
 
 ![2](../images/4/1.jpg)
+
 
 Nobody can move.
 
@@ -103,6 +105,7 @@ In conductors, many electrons are **loosely bound** to their atoms.
 These electrons can move freely when voltage is applied.
 
 ![3](../images/4/3.png)
+
 
 
 Since electrons move easily, conductors have **low electrical resistance**.
@@ -154,8 +157,8 @@ An **insulator** is a material that strongly resists the flow of electricity.
 
 Its electrons are tightly held by their atoms and cannot move freely.
 
-
 ![3](../images/4/4.png)
+
 
 
 
@@ -200,8 +203,8 @@ For example:
 
 ![5](../images/4/5(1).jpg)
 
-
 ![5](../images/4/6.jpg)
+
 
 
 The copper carries electricity.
@@ -215,6 +218,7 @@ The plastic protects you from it.
 A **semiconductor** is a material whose electrical conductivity lies between that of a conductor and an insulator.
 
 ![7](../images/4/7.jpg)
+
 
 A semiconductor:
 
@@ -273,6 +277,7 @@ A transistor must behave like a switch.
 
 ![8](../images/4/8.jpg)
 
+
 Copper cannot easily switch between conducting and blocking electricity.
 
 It always conducts.
@@ -298,6 +303,7 @@ That makes it perfect for building transistors.
 # Electrical Conductivity Scale
 
 ![9](../images/4/9.jpg)
+
 
 ---
 
@@ -520,4 +526,9 @@ To create electronic switches, engineers must carefully modify silicon by introd
 In the next chapter, **Semiconductors and Doping**, we will explore how pure silicon is transformed into one of the most important materials in the history of computing.
 
 
-➡️ **Next:** [05 Semiconductors and Doping](05_Semiconductors and Doping.md)
+
+---
+
+### 📚 Navigation
+
+[← Atoms and Electrons](03_Atoms%20and%20Electrons.md) | [📖 Contents](../../README.md) | [Next → Semiconductors and Doping](05_Semiconductors%20and%20Doping.md)

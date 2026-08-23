@@ -52,6 +52,7 @@ A transistor acts like an electronic switch.
 
 ![1](../images/8/1.jpg)
 
+
 One transistor can only perform a simple switching action.
 
 By connecting several transistors together, engineers create circuits that make logical decisions.
@@ -59,6 +60,7 @@ By connecting several transistors together, engineers create circuits that make 
 These circuits are called **logic gates**.
 
 ![2](../images/8/2.jpg)
+
 
 ---
 
@@ -77,6 +79,7 @@ Logic gates process these binary values.
 
 ![3](../images/8/3.jpg)
 
+
 ---
 
 # Inputs and Outputs
@@ -84,6 +87,7 @@ Logic gates process these binary values.
 Every logic gate receives one or more **inputs** and produces one **output**.
 
 ![4](../images/8/4.jpg)
+
 
 Some gates have one input.
 
@@ -171,6 +175,7 @@ Think of a secure door with two locks.
 Both keys must be turned before the door opens.
 
 ![5](../images/8/5.jpg)
+
 ### Real-World Example
 
 A laptop starts only if:
@@ -195,6 +200,7 @@ An **OR gate** produces an output of **1 if at least one input is 1**.
 Imagine a room with two light switches connected so that either one can turn on the light.
 
 ![6](../images/8/6.jpg)
+
 ### Real-World Example
 
 A computer wakes up if:
@@ -224,6 +230,7 @@ It reverses the input.
 
 ![7](../images/8/7.jpg)
 
+
 ### Truth Table
 
 | Input | Output |
@@ -244,6 +251,7 @@ A **NAND gate** is simply an AND gate followed by a NOT gate.
 It gives the opposite result of AND.
 
 ![8](../images/8/8.jpg)
+
 ### Why Is NAND Important?
 
 The NAND gate is called a **universal gate** because any digital circuit can be built using only NAND gates.
@@ -258,6 +266,7 @@ A **NOR gate** is an OR gate followed by a NOT gate.
 
 ![9](../images/8/9.jpg)
 
+
 Like NAND, NOR is also a **universal gate**.
 
 ---
@@ -269,6 +278,7 @@ Like NAND, NOR is also a **universal gate**.
 It outputs **1 only when the inputs are different**.
 
 ![10](../images/8/10.jpg)
+
 ### Real-World Example
 
 XOR is used in:
@@ -287,6 +297,7 @@ An **XNOR gate** is the opposite of XOR.
 It outputs **1 when the inputs are the same**.
 
 ![11](../images/8/11.jpg)
+
 
 XNOR is commonly used in digital comparators.
 
@@ -314,9 +325,8 @@ It is a small circuit made from transistors.
 
 For example:
 
-
-
 ![12](../images/8/12.jpg)
+
 
 
 
@@ -366,8 +376,8 @@ Door Unlock ───┘
           Open Door
 ```
 
-
 ![13](../images/8/13.jpg)
+
 
 If either condition is false, the door stays closed.
 
@@ -530,4 +540,9 @@ To solve this problem, engineers use **Boolean Algebra**—a mathematical system
 In the next chapter, **Boolean Algebra**, we will learn how to write logical expressions, simplify circuits, and understand the mathematical foundation behind every digital computer.
 
 
-➡️ **Next:** [09 Boolean Algebra](09_Boolean Algebra.md)
+
+---
+
+### 📚 Navigation
+
+[← Semiconductor Physics](07_Semiconductor%20Physics.md) | [📖 Contents](../../README.md) | [Next → Boolean Algebra](09_Boolean%20Algebra.md)

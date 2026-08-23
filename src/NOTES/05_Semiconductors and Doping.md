@@ -91,6 +91,7 @@ The most important fact for electronics is that it has **4 valence electrons**.
 
 ![1](../images/5/1.jpg)
 
+
 These four valence electrons allow silicon atoms to bond strongly with neighboring atoms.
 
 ---
@@ -102,6 +103,7 @@ A **covalent bond** is formed when two atoms share electrons.
 In a silicon crystal, every silicon atom shares its four valence electrons with four neighboring silicon atoms.
 
 ![2](../images/5/2.jpg)
+
 
 Each line represents a shared pair of electrons.
 
@@ -116,6 +118,7 @@ Millions of silicon atoms join together in a repeating three-dimensional pattern
 A simplified view looks like this:
 
 ![1](../images/5/3.jpg)
+
 Every silicon atom forms four covalent bonds.
 
 This regular structure gives silicon its unique electrical properties.
@@ -252,8 +255,8 @@ Nearly all semiconductor devices use **extrinsic semiconductors**.
 
 # Visualizing Doping
 
-
 ![4](../images/5/4.jpg)
+
 
 Only a few atoms are replaced.
 
@@ -362,7 +365,6 @@ These controlled materials form the foundation of every modern electronic device
 10. Name two elements used for doping silicon.
 
 
-➡️ **Next:** [06 P-Type and N-Type Semiconductors](06_P-Type and N-Type Semiconductors.md)
 
 ---
 
@@ -460,3 +462,9 @@ Now that we understand **how silicon is doped**, we are ready to explore the two
 These two materials will soon be joined together to create the **PN junction**, the fundamental building block of diodes and transistors.
 
 In the next chapter, **P-Type and N-Type Semiconductors**, we will examine how different dopant atoms change the behavior of silicon and prepare it for use in electronic circuits.
+
+---
+
+### 📚 Navigation
+
+[← Conductors, Insulators, and Semiconductors](04_Conductors%2C%20Insulators%2C%20and%20Semiconductors.md) | [📖 Contents](../../README.md) | [Next → P-Type and N-Type Semiconductors](06_P-Type%20and%20N-Type%20Semiconductors.md)

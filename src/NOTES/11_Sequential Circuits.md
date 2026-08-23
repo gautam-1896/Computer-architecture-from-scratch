@@ -65,6 +65,7 @@ Unlike combinational circuits, sequential circuits have **memory**.
 
 ![1](../images/11/1.jpg)
 
+
 This ability to remember previous information is the defining feature of sequential circuits.
 
 ---
@@ -122,6 +123,7 @@ A sequential circuit stores information by feeding part of its output back into 
 
 ![2](../images/11/2.jpg)
 
+
 This feedback allows the circuit to "remember" a previous value.
 
 ---
@@ -133,6 +135,7 @@ Most sequential circuits use a **clock signal**.
 A **clock** is a repeating electrical pulse that synchronizes operations inside a digital system.
 
 ![3](../images/11/3.jpg)
+
 
 Each transition of the clock tells circuits **when** to update their stored values.
 
@@ -160,8 +163,8 @@ The clock keeps every part of the processor working together.
 
 A **clock cycle** is one complete repetition of the clock waveform.
 
-
 ![3](../images/11/3.jpg)
+
 
 During each cycle, a processor may:
 
@@ -206,8 +209,8 @@ Outputs:
 
 ### Simplified Block Diagram
 
-
 ![4](../images/11/4.jpg)
+
 
 Operation:
 
@@ -242,8 +245,8 @@ Output:
 
 ### Block Diagram
 
-
 ![5](../images/11/5.jpg)
+
 
 When the clock edge occurs, the value at **D** is copied to **Q**.
 
@@ -251,8 +254,8 @@ When the clock edge occurs, the value at **D** is copied to **Q**.
 
 # Timing Example
 
-
 ![6](../images/11/6.jpg)
+
 
 The output changes only when the clock triggers it.
 
@@ -264,8 +267,8 @@ A **register** is a group of flip-flops used to store multiple bits.
 
 Example:
 
-
 ![7](../images/11/7.jpg)
+
 
 ```text
 Bit7 Bit6 Bit5 Bit4 Bit3 Bit2 Bit1 Bit0
@@ -569,4 +572,9 @@ Sequential circuits provide the basic memory elements, but a modern computer nee
 In the next chapter, **Memory**, we will study how bits are stored in **RAM**, **ROM**, **cache memory**, and other storage technologies. We will also explore concepts such as **memory cells, addressing, capacity, latency,** and the **memory hierarchy**, which are fundamental to understanding computer architecture.
 
 
-➡️ **Next:** [12 Memory](12_Memory.md)
+
+---
+
+### 📚 Navigation
+
+[← Combinational Circuits](10_Combinational%20Circuits.md) | [📖 Contents](../../README.md) | [Next → Memory](12_Memory.md)

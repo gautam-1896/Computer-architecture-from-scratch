@@ -132,6 +132,7 @@ Eight bits form one **byte**.
 
 ![1](../images/12/1.jpg)
 
+
 Larger units include:
 
 | Unit | Size |
@@ -181,7 +182,9 @@ Address      Data
 
 0011         00110011
 ```
+
 ![2](../images/12/2.jpg)
+
 
 The CPU accesses memory by specifying an address.
 
@@ -210,7 +213,9 @@ Memory
 
 Returns Data
 ```
+
 ![3](../images/12/3.jpg)
+
 
 ---
 
@@ -233,7 +238,9 @@ New Data
 
 Memory Stores It
 ```
+
 ![4](../images/12/4.jpg)
+
 
 ---
 
@@ -254,7 +261,9 @@ Power OFF
 
 Data Lost
 ```
+
 ![5](../images/12/5.webp)
+
 
 
 Volatile memory is extremely fast but temporary.
@@ -281,6 +290,7 @@ Data Remains
 ```
 
 ![6](../images/12/6.jpg)
+
 
 
 This type of memory is used for permanent storage.
@@ -378,8 +388,8 @@ Modern processors usually have multiple cache levels.
 | L2 | Fast | Medium |
 | L3 | Slower than L1/L2 | Largest on-chip cache |
 
-
 ![7](../images/12/7.jpg)
+
 
 
 Some advanced systems also use an L4 cache, but L1–L3 are the most common.
@@ -398,7 +408,9 @@ Registers store:
 - Addresses
 - Instructions
 - Temporary values
+
 ![8](../images/12/8.jpg)
+
 
 
 Because they are inside the processor, accessing them is much faster than accessing cache or RAM.
@@ -715,4 +727,9 @@ Registers are the fastest storage elements in a computer and play a critical rol
 In the next chapter, **Registers**, we will explore the different types of CPU registers, how they work together, and why they are essential for building an efficient processor.
 
 
-➡️ **Next:** [13 Registers](13_Registers.md)
+
+---
+
+### 📚 Navigation
+
+[← Sequential Circuits](11_Sequential%20Circuits.md) | [📖 Contents](../../README.md) | [Next → Registers](13_Registers.md)

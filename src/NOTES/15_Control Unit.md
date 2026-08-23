@@ -594,4 +594,9 @@ Now that we understand the major components of the CPU, the next step is to stud
 In the next chapter, **Datapath**, we will explore how data flows between **registers, multiplexers, buses, the ALU, memory, and the Control Unit**, and see how these components work together to execute every machine instruction.
 
 
-➡️ **Next:** [16 Datapath](16_Datapath.md)
+
+---
+
+### 📚 Navigation
+
+[← Arithmetic Logic Unit (ALU)](14_ALU.md) | [📖 Contents](../../README.md) | [Next → Datapath](16_Datapath.md)

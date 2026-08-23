@@ -58,6 +58,7 @@ Each silicon atom shares these four electrons with four neighboring silicon atom
 
 ![1](../images/6/1.jpg)
 
+
 In pure silicon:
 
 - Almost every electron is involved in a covalent bond.
@@ -119,6 +120,7 @@ However, one electron is left over.
 
 ![1](../images/6/2.jpg)
 
+
 This extra electron is only loosely bound and can move through the crystal much more easily than electrons in pure silicon.
 
 ---
@@ -141,6 +143,7 @@ N-type silicon contains:
 - Very few holes
 
 ![3](../images/6/3.jpg)
+
 Electrons carry most of the electric current.
 
 These are called the **majority charge carriers**.
@@ -164,6 +167,7 @@ Common examples include:
 - Indium (In)
 
 ![5](../images/6/5.jpg)
+
 
 These are called **acceptor atoms**.
 
@@ -191,6 +195,7 @@ One bond remains incomplete.
 
 ![4](../images/6/4.jpg)
 
+
 The empty space where an electron could exist is called a **hole**.
 
 ---
@@ -206,6 +211,7 @@ When a nearby electron moves into the hole, it leaves behind another hole.
 As this process repeats, the hole appears to move through the crystal.
 
 ![6](../images/6/6.gif)
+
 
 This is similar to moving empty seats in a row of chairs.
 
@@ -274,6 +280,7 @@ This distinction is very important when analyzing semiconductor devices.
 
 ![7](../images/6/7.jpg)
 
+
 # Why Both Types Are Needed
 
 Neither N-type nor P-type silicon alone can perform all the functions required in modern electronics.
@@ -281,6 +288,7 @@ Neither N-type nor P-type silicon alone can perform all the functions required i
 Their real power comes from joining them together.
 
 ![7](../images/6/8.jpg)
+
 
 The boundary between them forms a **PN junction**.
 
@@ -471,4 +479,9 @@ Now that we understand **P-type** and **N-type** semiconductors, we are ready to
 In the next chapter, **The PN Junction**, we will see how electrons and holes move across the boundary between P-type and N-type materials, forming a **depletion region** and a **built-in electric field**. These phenomena allow devices like diodes and transistors to control the flow of electricity with remarkable precision.
 
 
-➡️ **Next:** [07 Semiconductor Physics](07_Semiconductor Physics.md)
+
+---
+
+### 📚 Navigation
+
+[← Semiconductors and Doping](05_Semiconductors%20and%20Doping.md) | [📖 Contents](../../README.md) | [Next → Semiconductor Physics](07_Semiconductor%20Physics.md)

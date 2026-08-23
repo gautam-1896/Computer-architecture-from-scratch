@@ -100,6 +100,7 @@ Computers are electronic devices.
 Electronic circuits can easily represent two stable states:
 
 ![1](../images/9/1.jpg)
+
 Because electronic hardware naturally works with two states, Boolean Algebra is the perfect mathematical language for describing digital circuits.
 
 ---
@@ -479,8 +480,8 @@ Similar to ordinary algebra.
 
 This law is frequently used to simplify logic circuits.
 
-
 ![2](../images/9/2.jpg)
+
 
 ---
 
@@ -497,8 +498,8 @@ They allow engineers to replace AND gates with OR gates (and vice versa) while a
 
 These theorems are widely used when designing circuits with NAND and NOR gates.
 
-
 ![3](../images/9/3.jpg)
+
 
 
 ---
@@ -735,4 +736,9 @@ These functions are created by combining multiple logic gates into larger circui
 In the next chapter, **Combinational Circuits**, we will build practical digital components such as **half adders, full adders, multiplexers, demultiplexers, encoders, decoders, and comparators**—the building blocks of every Arithmetic Logic Unit (ALU) and CPU.
 
 
-➡️ **Next:** [10 Combinational Circuits](10_Combinational Circuits.md)
+
+---
+
+### 📚 Navigation
+
+[← Logic Gates](08_Logic%20Gates.md) | [📖 Contents](../../README.md) | [Next → Combinational Circuits](10_Combinational%20Circuits.md)

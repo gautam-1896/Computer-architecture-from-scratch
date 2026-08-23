@@ -714,4 +714,9 @@ Now that we understand how the CPU physically moves and processes data, the next
 In the next chapter, **Instruction Set Architecture (ISA)**, we will explore **machine instructions, instruction formats, opcodes, operands, addressing modes, and how programmers and compilers use the ISA to control the processor**.
 
 
-➡️ **Next:** [17 Instruction Set Architecture](17_Instruction Set Architecture.md)
+
+---
+
+### 📚 Navigation
+
+[← Control Unit (CU)](15_Control%20Unit.md) | [📖 Contents](../../README.md) | [Next → Instruction Set Architecture (ISA)](17_Instruction%20Set%20Architecture.md)
