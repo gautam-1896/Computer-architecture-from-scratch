@@ -60,17 +60,7 @@ It receives data from registers, performs an operation, and stores the result ba
 
 A simplified view is:
 
-```text
-Register A ───┐
-              │
-              ▼
-             ALU
-              │
-Register B ───┘
-              │
-              ▼
-        Result Register
-```
+![1](../images/14/1.png)
 
 The ALU itself does **not** decide *which* operation to perform. It waits for instructions from the **Control Unit**, which tells it whether to add, subtract, compare, or perform another operation.
 
@@ -439,21 +429,7 @@ Only the selected operation's result is sent to the output.
 
 A simplified CPU organization is:
 
-```text
-          Instructions
-                │
-                ▼
-         Control Unit
-                │
-      Operation Select
-                │
-                ▼
-Registers ───► ALU ───► Registers
-                │
-                ▼
-          Status Register
-```
-
+![2](../images/14/2.png)
 The Control Unit tells the ALU what to do, the registers supply the data, and the ALU performs the computation.
 
 ---
