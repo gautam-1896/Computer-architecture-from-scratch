@@ -342,42 +342,6 @@ Interactive visualizations for
 
 ---
 
-# Planned Folder Structure
-
-```
-computer-architecture-from-scratch/
-
-│
-├── docs/
-│
-├── src/
-│   ├── transistor/
-│   ├── logic_gates/
-│   ├── combinational/
-│   ├── sequential/
-│   ├── registers/
-│   ├── memory/
-│   ├── alu/
-│   ├── buses/
-│   ├── control_unit/
-│   ├── datapath/
-│   ├── isa/
-│   ├── assembler/
-│   ├── cpu/
-│   ├── debugger/
-│   ├── simulator/
-│   └── visualization/
-│
-├── examples/
-│
-├── tests/
-│
-├── assets/
-│
-├── README.md
-├── LICENSE
-└── requirements.txt
-```
 
 ---
 
